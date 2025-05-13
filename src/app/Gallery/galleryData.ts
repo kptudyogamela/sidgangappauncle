@@ -96,13 +96,6 @@
       image: "/Images/gal/15.JPG",
     },
     {
-      title: "Delete",
-      subtitle: "",
-    },
-    {
-      title: "Delete",
-    },
-    {
       title: "Shop Floor",
       subtitle: "Unit 1",
       description: ".",
