@@ -34,7 +34,7 @@ const jobOpenings = [
   },
   {
     title: 'Marketing Engineer',
-    department: 'Finance/ MBA',
+    department: 'Marketting Expert',
     location: 'Peenya, Bangalore',
     type: 'Full-Time',
   },
