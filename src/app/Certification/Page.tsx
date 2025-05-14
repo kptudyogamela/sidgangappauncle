@@ -73,7 +73,7 @@ export default function Certification() {
         </div>
 
         {/* Rotating Certificates (2 at a time) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center mb-12 transition-all duration-700 ease-in-out">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center mb-12 transition-all duration-700 ease-in-out">
           {visibleCertificates.map((cert, idx) => (
             <div
               key={idx}
@@ -95,7 +95,7 @@ export default function Certification() {
             </div>
 
           ))}
-        </div>
+        </div> */}
 
       </div>
     </section >

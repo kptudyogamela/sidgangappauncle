@@ -40,7 +40,7 @@ const services = [
     category: 'TUBE PROCESSING',
     title: 'SPM ID OD Chamfering Machine',
     description: 'Used for internal and external chamfering of cylindrical components up to 50 mm. This machine is designed to prepare edges for threading or welding, improving product quality and ease of assembly.',
-    image: '/Images/machines/laser.jpg',
+    image: '/Images/machines/SOCO Chamfering Machine.JPG',
     video: '/videos/chamfering.mp4',
     count: 1,
   },
@@ -71,15 +71,7 @@ const services = [
     count: 2,
   },
 
-  // SHEET METAL FABRICATION (2)
-  {
-    category: 'SHEET METAL FABRICATION',
-    title: 'Laser Cutting 3KW Machine',
-    description: 'High precision fiber laser cutter with 3KW power for complex designs. This machine is perfect for cutting intricate shapes in metals like stainless steel, aluminum, and mild steel.',
-    image: '/Images/machines/laser.jpg',
-    video: '/videos/laser.mp4',
-    count: 1,
-  },
+
   {
     category: 'SHEET METAL FABRICATION',
     title: 'CNC Bending Machine',
@@ -94,7 +86,7 @@ const services = [
     category: 'THREADING & WELDING',
     title: 'Thread Rolling Machines',
     description: 'Machines designed for high-quality thread formation using rolling technique. Thread rolling is a process that forms threads through deformation, making parts stronger and more durable.',
-    image: '/Images/machines/Thread Rolling.jpg',
+    image: '/Images/machines/thread.jpg',
     video: '/videos/thread-rolling.mp4',
     count: 2,
   },
@@ -118,7 +110,7 @@ const services = [
   },
   {
     category: 'SECONDARY OPERATIONS',
-    title: 'SPM Rod Cutting Machine',
+    title: 'SPM Rod and Tube Cutting Machine',
     description: 'For fast and accurate cutting of rods up to 16 mm diameter. The SPM rod cutting machine helps streamline production in industries that require precise rod lengths for assembly.',
     image: '/Images/machines/SOCO Cutting Machine.jpg',
     video: '/videos/rod-cutting.mp4',

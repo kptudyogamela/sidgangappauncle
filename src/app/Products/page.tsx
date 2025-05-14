@@ -1,21 +1,19 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Product {
   title: string;
   description: string;
   category: string;
   type: string;
-  image: string;
-  allImages?: string[]; // new field for image group
+  images: string[];
 }
-const groupedProducts = [
 
+const groupedProducts: Product[] = [
   {
     title: "Plain Bolts",
     description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
@@ -239,35 +237,31 @@ const groupedProducts = [
   },
 ];
 
-
-
 const types = ["All", ...new Set(groupedProducts.map((p) => p.category))];
 
 export default function Products() {
   const [filter, setFilter] = useState("All");
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [imageIndex, setImageIndex] = useState(0);
+  const [carouselIndices, setCarouselIndices] = useState<{ [key: number]: number }>({});
 
-  const filtered =
-    filter === "All"
-      ? groupedProducts
-      : groupedProducts.filter((p) => p.category === filter);
+  const filtered = filter === "All"
+    ? groupedProducts
+    : groupedProducts.filter((p) => p.category === filter);
 
-  const handleNext = () => {
-    if (selectedProduct) {
-      setImageIndex((prev) =>
-        selectedProduct.allImages && prev < selectedProduct.allImages.length - 1 ? prev + 1 : 0
-      );
-    }
-  };
+  // Auto-play effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCarouselIndices(prevIndices => {
+        const newIndices = { ...prevIndices };
+        filtered.forEach((product, index) => {
+          const current = prevIndices[index] || 0;
+          newIndices[index] = (current + 1) % product.images.length;
+        });
+        return newIndices;
+      });
+    }, 3000);
 
-  const handlePrev = () => {
-    if (selectedProduct) {
-      setImageIndex((prev) =>
-        selectedProduct.allImages && prev > 0 ? prev - 1 : (selectedProduct.allImages?.length || 1) - 1
-      );
-    }
-  };
+    return () => clearInterval(interval);
+  }, [filtered]);
 
   return (
     <section className="py-16 bg-white relative">
@@ -295,85 +289,29 @@ export default function Products() {
         {/* Product Cards */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filtered.map((product, idx) => {
-            const mainImage = product.images[0];
+            const currentIndex = carouselIndices[idx] || 0;
+            const currentImage = product.images[currentIndex];
+
             return (
               <Card key={idx} className="hover:shadow-lg transition">
                 <CardContent className="p-4">
-                  <div className="relative w-full  h-48 mb-4">
+                  <div className="relative w-full h-48 mb-4">
                     <Image
-                      src={mainImage}
+                      src={currentImage}
                       alt={product.title}
                       fill
                       style={{ objectFit: "contain" }}
-                      className="rounded"
+                      className="rounded transition-opacity duration-500"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800">{product.title}</h3>
                   <p className="text-sm text-gray-500 mt-2">{product.description}</p>
-                  <Button
-                    variant="link"
-                    className="mt-3 text-red-500"
-                    onClick={() => {
-                      setSelectedProduct({ ...product, image: mainImage, allImages: product.images });
-                      setImageIndex(0);
-                    }}
-                  >
-                    Learn More →
-                  </Button>
                 </CardContent>
               </Card>
             );
           })}
         </div>
       </div>
-
-      {/* Modal for Carousel View */}
-      {selectedProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-red-200 via-green-100 to-purple-100 bg-opacity-70 backdrop-blur-md">
-
-          <div className="relative bg-white rounded-lg overflow-hidden shadow-xl max-w-5xl w-full p-6">
-            <button
-              type="button"
-              onClick={() => setSelectedProduct(null)}
-              className="absolute top-2 right-2 text-gray-700 hover:text-black z-10"
-            >
-              <X size={24} />
-            </button>
-
-            {/* Carousel Controls */}
-            <div className="relative w-full h-[60vh] sm:h-[80vh] max-h-[600px] mb-6 flex items-center justify-center px-4">
-              {selectedProduct.allImages && selectedProduct.allImages.length > 1 && (
-                <>
-                  <button
-                    onClick={handlePrev}
-                    className="absolute left-4 z-10 text-gray-700 hover:text-black bg-white/80 rounded-full p-1"
-                  >
-                    <ChevronLeft size={28} />
-                  </button>
-                  <button
-                    onClick={handleNext}
-                    className="absolute right-4 z-10 text-gray-700 hover:text-black bg-white/80 rounded-full p-1"
-                  >
-                    <ChevronRight size={28} />
-                  </button>
-                </>
-              )}
-              <Image
-                src={selectedProduct.allImages?.[imageIndex] || "/placeholder.png"}
-                alt={selectedProduct.title}
-                fill
-                style={{ objectFit: "contain" }}
-                className="rounded"
-              />
-            </div>
-
-
-            <h3 className="text-xl text-center font-semibold text-gray-800">{selectedProduct.title}</h3>
-            <p className="text-sm text-center text-gray-600 mt-2">{selectedProduct.description}</p>
-          </div>
-        </div>
-      )
-      }
-    </section >
+    </section>
   );
 }
