@@ -14,38 +14,42 @@ interface Product {
 }
 
 const groupedProducts: Product[] = [
+
+
   {
-    title: "Plain Bolts",
-    description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
+    title: "Hexagonal Head Profiled Bolt",
+    description: "Hexagonal Head Profiled Bolt with a pointed tip, washer, and nut—used for easy alignment and secure fastening in structural or mechanical applications..",
     category: "Bolts",
     type: "Plain Bolt",
     images: [1, 2].map(i => `/Images/products/Bolts/${i}.png`)
   },
   {
-    title: "Plain Bolts",
-    description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
+    title: "Tie rods",
+    description: "Tie rods in cable drums are high-strength steel rods used to hold the drum flanges together and support the central barrel. They maintain structural integrity during lifting, transport, and cable unwinding.",
     category: "Bolts",
     type: "Plain Bolt",
     images: [3, 4].map(i => `/Images/products/Bolts/${i}.png`)
   },
 
+
   {
-    title: "Construction Bolts",
-    description: "Bolts used in heavy construction projects to hold components together securely and helps in strength of the buildings.",
+    title: "Threaded Rod",
+    description: "A cylindrical metal rod threaded along its entire length, used for fastening applications where adjustable length and high-strength joining are required. Common in construction, cable drums, machinery, and electrical assemblies.",
     category: "Bolts",
     type: "Construction Bolts",
     images: [5, 6, 7].map(i => `/Images/products/Bolts/${i}.png`)
   },
   {
-    title: "Plain Bolts",
+    title: "Hexagonal headed Plain Bolts",
     description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
     category: "Bolts",
     type: "Plain Bolt",
     images: [8, 9, 10].map(i => `/Images/products/Bolts/${i}.png`)
   },
 
+
   {
-    title: "Plain Bolts",
+    title: "Hexagonal headed Plain Bolts",
     description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
     category: "Bolts",
     type: "Plain Bolt",
@@ -53,11 +57,12 @@ const groupedProducts: Product[] = [
   },
   {
     title: "Corner Bracket Piece",
-    description: "Used for assembling metal frameworks; provides angular support in structural and fabrication works.",
+    description: "Used for assembling metal frameworks,structural assemblies, frame construction, or machine supports. Mainly used in electrical enclosure body",
     category: "Corner",
     type: "Fabrication",
     images: [1, 2, 5, 6, 7, 8, 9, 10].map(i => `/Images/products/corner/${i}.png`)
   },
+
 
   {
     title: "Washers",
@@ -67,48 +72,48 @@ const groupedProducts: Product[] = [
     images: [1, 2].map(i => `/Images/products/Services/${i}.png`)
   },
   {
-    title: "Corner Bracket Piece",
-    description: "Used for assembling metal frameworks, in electrical enclosure bodies it provides angular support in structural and fabrication works.",
+    title: "Laser cut and CNC Bending Part",
+    description: "Parts used in Fabrication Industry.",
     category: "Services",
     type: "Corner Piece",
     images: [3, 4, 5, 6, 7, 8, 9, 10, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30].map(i => `/Images/products/Services/${i}.png`)
   }, {
-    title: "Corner Bracket Piece",
-    description: "Used for assembling metal frameworks, in electrical enclosure bodies it provides angular support in structural and fabrication works.",
+    title: "Laser cut and CNC Bending Part",
+    description: "Parts used in Fabrication Industry.",
     category: "Services",
     type: "Fabrication",
     images: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(i => `/Images/products/Services/${i}.png`)
   },
   {
-    title: "Wall Mounting Bracket",
-    description: "Supports enclosure mounting on vertical surfaces in electrical and mechanical assemblies.",
+    title: "Hook Stand SPG",
+    description: " This is a rod which is parted, chamfered and turned, majorly used as automobile parts  .",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/1.png", "/Images/products/Automobile/2.png"]
   },
   {
-    title: "Support Frame",
-    description: "Used in equipment housing to provide rigid structural support.",
+    title: "Pipe RR Fork",
+    description: "It includes both Tube, Rod and assembly operation.",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/3.png", "/Images/products/Automobile/4.png"]
   },
   {
-    title: "Angle Connector",
-    description: "Provides angular support and joint reinforcement in sheet metal assemblies.",
+    title: "Bolt RR Cushion",
+    description: "Used in two wheeler .",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/5.png", "/Images/products/Automobile/6.png"]
   },
   {
-    title: "Mounting Plate",
-    description: "Used to mount components securely inside electrical enclosures.",
+    title: "Bush Insert",
+    description: "A automobile part used in heavy construction vehicles.",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/7.png", "/Images/products/Automobile/8.png", "/Images/products/Automobile/9.png"]
   },
   {
-    title: "Enclosure Cover",
+    title: "Pipe Pivot",
     description: "Provides protective covering for electrical cabinet enclosures.",
     category: "Automobile",
     type: "Fabrication",
@@ -128,6 +133,7 @@ const groupedProducts: Product[] = [
     type: "Fabrication",
     images: ["/Images/products/Automobile/16.png", "/Images/products/Automobile/17.png"]
   },
+
 
   {
     title: "Tubular Parts - Tractor",
@@ -163,78 +169,7 @@ const groupedProducts: Product[] = [
     category: "Tubular Parts",
     type: "Tubular Pipes",
     images: [12, 13].map(i => `/Images/products/Tubular/${i}.png`)
-  },
-  {
-    title: "Tubular Pipes",
-    description: "Cylindrical pipes used in mechanical frameworks and systems.",
-    category: "Tubular Parts",
-    type: "Tubular Pipes",
-    images: [14, 15, 16].map(i => `/Images/products/Tubular/${i}.png`)
-  },
-  {
-    title: "Tubular Pipes",
-    description: "Cylindrical pipes used in mechanical frameworks and systems.",
-    category: "Tubular Parts",
-    type: "Tubular Pipes",
-    images: [12, 13].map(i => `/Images/products/Tubular/${i}.png`)
-  },
-
-  {
-    title: "Assembly Parts",
-    description: "Components used in mechanical and industrial assemblies.",
-    category: "Turned Parts",
-    type: "Assembly Parts",
-    images: [1, 2].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Tie Rods",
-    description: "Structural rods used in Cable drums to support tension.",
-    category: "Turned Parts",
-    type: "Tie Rods",
-    images: [3, 4, 5, 6, 7].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [8, 9, 10, 11].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [12, 13].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [14, 15, 16].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [17].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [18, 19, 20].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hook Stand SPG",
-    description: "Stand components used in scaffoldings or machinery fixtures.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [21, 22].map(i => `/Images/products/Turned/${i}.png`)
-  },
+  }
 ];
 
 const types = ["All", ...new Set(groupedProducts.map((p) => p.category))];

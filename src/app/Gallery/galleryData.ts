@@ -401,25 +401,25 @@
       title: "New Image",
       subtitle: "New Team",
       description: "Precision thread cutting for secure nut and bolt fitting.",
-      image: "/Images/gal/67.JPG",
+      image: "/Images/gal/67.jpg",
     },
     {
       title: "New Image",
       subtitle: "New Team",
       description: "Precision thread cutting for secure nut and bolt fitting.",
-      image: "/Images/gal/68.JPG",
+      image: "/Images/gal/68.jpg",
     },
     {
       title: "New Image",
       subtitle: "New Team",
       description: "Precision thread cutting for secure nut and bolt fitting.",
-      image: "/Images/gal/69.JPG",
+      image: "/Images/gal/69.jpg",
     },
     {
       title: "New Image",
       subtitle: "New Team",
       description: "Precision thread cutting for secure nut and bolt fitting.",
-      image: "/Images/gal/70.JPG",
+      image: "/Images/gal/70.jpg",
     },
     {
       title: "New Image",
@@ -539,7 +539,7 @@
       title: "New Image",
       subtitle: "New Team",
       description: "Precision thread cutting for secure nut and bolt fitting.",
-      image: "/Images/gal/90.jpg",
+      image: "/Images/gal/90.JPG",
     },
     {
       title: "New Image",
