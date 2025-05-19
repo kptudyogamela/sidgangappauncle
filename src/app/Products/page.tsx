@@ -13,7 +13,7 @@ interface Product {
   images: string[];
 }
 
-const groupedProducts: Product[] = [
+const groupedProducts = [
 
 
   {
@@ -63,6 +63,13 @@ const groupedProducts: Product[] = [
     images: [1, 2, 5, 6, 7, 8, 9, 10].map(i => `/Images/products/corner/${i}.png`)
   },
 
+  {
+    title: "Corner Bracket Piece",
+    description: "Used for assembling metal frameworks,structural assemblies, frame construction, or machine supports. Mainly used in electrical enclosure body",
+    category: "Services",
+    type: "Fabrication",
+    images: [1, 2, 5, 6, 7, 8, 9, 10].map(i => `/Images/products/corner/${i}.png`)
+  },
 
   {
     title: "Washers",
@@ -89,28 +96,35 @@ const groupedProducts: Product[] = [
     description: " This is a rod which is parted, chamfered and turned, majorly used as automobile parts  .",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/1.png", "/Images/products/Automobile/2.png"]
+    images: ["/Images/products/Automobile/1.png", "/Images/products/Automobile/12 (1).png", "/Images/products/Automobile/13 (1).png"]
   },
   {
-    title: "Pipe RR Fork",
-    description: "It includes both Tube, Rod and assembly operation.",
+    title: "Bush Insert",
+    description: "A automobile part used in heavy vehicles.",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/3.png", "/Images/products/Automobile/4.png"]
+    images: ["/Images/products/Automobile/2.png", "/Images/products/Automobile/21.png"]
+  },
+  {
+    title: "Rods",
+    description: "Used in two wheeler .",
+    category: "Automobile",
+    type: "Fabrication",
+    images: ["/Images/products/Automobile/47.png", "/Images/products/Automobile/48.png", "/Images/products/Automobile/49.png", "/Images/products/Automobile/50.png"]
   },
   {
     title: "Bolt RR Cushion",
     description: "Used in two wheeler .",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/5.png", "/Images/products/Automobile/6.png"]
+    images: ["/Images/products/Automobile/5.png", "/Images/products/Automobile/18.png", "/Images/products/Automobile/19.png", "/Images/products/Automobile/20.png"]
   },
   {
-    title: "Bush Insert",
-    description: "A automobile part used in heavy construction vehicles.",
+    title: "Pipe RR Fork",
+    description: "It includes both Tube, Rod and assembly operation.",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/7.png", "/Images/products/Automobile/8.png", "/Images/products/Automobile/9.png"]
+    images: ["/Images/products/Automobile/3.png", "/Images/products/Automobile/8.png", "/Images/products/Automobile/9.png"]
   },
   {
     title: "Pipe Pivot",
@@ -120,15 +134,15 @@ const groupedProducts: Product[] = [
     images: ["/Images/products/Automobile/10.png", "/Images/products/Automobile/11.png", "/Images/products/Automobile/12.png"]
   },
   {
-    title: "Cable Entry Frame",
-    description: "Frame for guiding and securing cables into electrical panels or cabinets.",
+    title: "Tubular Parts",
+    description: "Cutting, Chamfering, Secondary Operations and Plating on Tubes.",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/13.png", "/Images/products/Automobile/14.png", "/Images/products/Automobile/15.png"]
   },
   {
-    title: "Support Foot",
-    description: "Base component used to support or elevate structures.",
+    title: "Turned Parts",
+    description: "Parting, Chamfering, Tapping, Threading, Step Operations, Milling, etc Operations on Rods.",
     category: "Automobile",
     type: "Fabrication",
     images: ["/Images/products/Automobile/16.png", "/Images/products/Automobile/17.png"]
@@ -140,21 +154,30 @@ const groupedProducts: Product[] = [
     description: "Tubular mechanical parts used in tractors and agricultural machinery.",
     category: "Tubular Parts",
     type: "Tubular Part - Tractor",
-    images: [1, 2].map(i => `/Images/products/Tubular/${i}.png`)
+    images: [33, 34, 35].map(i => `/Images/products/Tubular/${i}.png`)
+  },
+  {
+    title: "Bush Insert",
+    description: "A automobile part used in heavy vehicles.",
+    category: "Tubular Parts",
+    type: "Fabrication",
+    images: ["/Images/products/Automobile/2.png", "/Images/products/Automobile/21.png"]
   },
   {
     title: "Tubular Parts - Automotive",
-    description: "Tubular mechanical parts used in automotive applications.",
+
+
+    description: "Tubular mechanical parts used in automobile applications.",
     category: "Tubular Parts",
     type: "Tubular Part - Automotive",
     images: [3, 4, 5].map(i => `/Images/products/Tubular/${i}.png`)
   },
   {
-    title: "Tubular Parts - Automotive",
-    description: "Tubular mechanical parts used in automotive applications.",
+    title: "Tubular Parts Cross Member",
+    description: " Square Tube used in mechanical parts used in automotive applications.",
     category: "Tubular Parts",
     type: "Tubular Part - Automotive",
-    images: [6, 7, 8, 9,].map(i => `/Images/products/Tubular/${i}.png`)
+    images: [6, 7, 88, 99,].map(i => `/Images/products/Tubular/${i}.png`)
   },
   {
     title: "Tubular Pipes",
@@ -168,9 +191,89 @@ const groupedProducts: Product[] = [
     description: "Cylindrical pipes used in mechanical frameworks and systems.",
     category: "Tubular Parts",
     type: "Tubular Pipes",
-    images: [12, 13].map(i => `/Images/products/Tubular/${i}.png`)
-  }
+    images: [12, 17].map(i => `/Images/products/Tubular/${i}.png`)
+  },
+  {
+    title: "Tubular Pipes",
+    description: "Cylindrical pipes used in mechanical frameworks and systems.",
+    category: "Tubular Parts",
+    type: "Tubular Pipes",
+    images: [14, 15, 16].map(i => `/Images/products/Tubular/${i}.png`)
+  },
+  {
+    title: "Tubular Pipes",
+    description: "Cylindrical pipes used in mechanical frameworks and systems.",
+    category: "Tubular Parts",
+    type: "Tubular Pipes",
+    images: [41, 42, 13].map(i => `/Images/products/Tubular/${i}.png`)
+  },
+
+
+  {
+    title: "Hexagonal Head Profile Bolts",
+    description: "Components used in mechanical and industrial assemblies.",
+    category: "Turned Parts",
+    type: "Assembly Parts",
+    images: [1, 2].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Tie Rods",
+    description: "Tie rods in cable drums are high-strength steel rods used to hold the drum flanges together and support the central barrel. They maintain structural integrity during lifting, transport, and cable unwinding.",
+    category: "Turned Parts",
+    type: "Tie Rods",
+    images: [3, 4, 5, 6, 7].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Construction Bolts",
+    description: "Stand components used in scaffoldings or machinery fixtures.**",
+    category: "Bolts",
+    type: "Hook Stand SPG",
+    images: [8, 9, 10, 11].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Hook Stand SPG",
+    description: "Stand components used in scaffoldings or machinery fixtures.",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [8, 9, 10, 11].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Hook Stand SPG",
+    description: "Two wheeler parts.",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [12, 13].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Collar",
+    description: "Assembly parts, mainly a two wheeler components.",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [14, 15, 16].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Bush",
+    description: "Bush.",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [17].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Hexagonal head Plain Bolts",
+    description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [18, 19, 20].map(i => `/Images/products/Turned/${i}.png`)
+  },
+  {
+    title: "Turned Parts",
+    description: "Rods with process such as parting, Turning, chamfering, Threading, Tapping etc .",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [21, 22].map(i => `/Images/products/Turned/${i}.png`)
+  },
 ];
+
 
 const types = ["All", ...new Set(groupedProducts.map((p) => p.category))];
 
