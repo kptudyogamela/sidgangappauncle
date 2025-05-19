@@ -104,7 +104,7 @@ const services = [
     category: 'SECONDARY OPERATIONS',
     title: 'Secondary Operation Machines',
     description: 'Used for secondary machining operations such as finishing, shaping, or drilling. These machines provide essential post-processing tasks for enhancing component quality and finishing.',
-    image: '/Images/machines/laser.jpg',
+    image: '/Images/machines/secondary operating.jpg',
     video: '/videos/secondary.mp4',
     count: 4,
   },

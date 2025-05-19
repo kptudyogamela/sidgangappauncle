@@ -13,9 +13,7 @@ interface Product {
   images: string[];
 }
 
-const groupedProducts = [
-
-
+const groupedProducts: Product[] = [
   {
     title: "Hexagonal Head Profiled Bolt",
     description: "Hexagonal Head Profiled Bolt with a pointed tip, washer, and nut—used for easy alignment and secure fastening in structural or mechanical applications..",
