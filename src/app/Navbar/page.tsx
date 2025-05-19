@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaBars, FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes, FaTwitter } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import TopBar from './Topbar';
 
 export default function Navbar() {
