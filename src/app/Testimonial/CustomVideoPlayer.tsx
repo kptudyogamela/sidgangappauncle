@@ -10,8 +10,9 @@ interface CustomVideoPlayerProps {
 const CustomVideoPlayer: React.FC<CustomVideoPlayerProps> = ({ src, title }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
+  // Start with muted true, since video will start muted
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   // Play/Pause toggle
   const togglePlay = () => {
@@ -35,12 +36,15 @@ const CustomVideoPlayer: React.FC<CustomVideoPlayerProps> = ({ src, title }) => 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.loop = true;
-      videoRef.current.muted = false;
+      videoRef.current.muted = true;  // <-- start muted here
       videoRef.current.autoplay = true;
       videoRef.current
         .play()
         .then(() => setIsPlaying(true))
         .catch(() => setIsPlaying(false));
+
+      // Also update state to reflect video muted status
+      setIsMuted(videoRef.current.muted);
     }
   }, []);
 

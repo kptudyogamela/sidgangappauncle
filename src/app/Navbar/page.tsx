@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes, FaTwitter } from 'react-icons/fa';
+import TopBar from './Topbar';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,33 +11,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top Strip */}
-      <div className="w-full bg-gray-100 text-sm font-medium py-2 px-4 overflow-x-hidden">
-        <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
-
-          {/* Left: Phone and Email */}
-          <div className="text-gray-800 flex items-center flex-wrap gap-2">
-            <span>📞 93437 77577 or 90082 34224</span>
-            <span className="hidden sm:inline"> | ✉️ maruthiautocomponents@gmail.com</span>
-          </div>
-
-          {/* Right: Social Icons */}
-          <div className="flex items-center gap-3">
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Facebook">
-              <FaFacebookF className="w-5 h-4" />
-            </a>
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Twitter">
-              <FaTwitter className="w-5 h-4" />
-            </a>
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Instagram">
-              <FaInstagram className="w-5 h-4" />
-            </a>
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="LinkedIn">
-              <FaLinkedinIn className="w-5 h-4" />
-            </a>
-          </div>
-
-        </div>
-      </div>
+      <TopBar />
 
 
       {/* Sticky Navbar */}

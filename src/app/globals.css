@@ -74,15 +74,6 @@ html, body {
     @apply bg-background text-foreground;
   }
 }
-/* styles.css or globals.css */
-@keyframes scroll-x {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 .scroll-wrapper {
   overflow: hidden;
@@ -103,6 +94,7 @@ html, body {
   100% {
     transform: translateX(0);
   }
+  
 }
 
 @keyframes slideInFromRight {
