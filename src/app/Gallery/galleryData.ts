@@ -9,49 +9,49 @@
       title: "Raw Material Storage Area",
       subtitle: "RM Storage Rack",
       description: "Conducting receiving Inspection",
-      image: "/Images/gal/1.JPG",
+      image: "/Images/gal/1.jpg",
     },
     {
       title: "SPM Cutting Area",
       subtitle: "Cross Member",
       description: "Tube cross cutting SPM Cutting machine.",
-      image: "/Images/gal/2.JPG",
+      image: "/Images/gal/2.jpg",
     },
     {
       title: "Office",
       subtitle: "CEO Desk",
       description: "Perfectly maintained Files in Rack System.",
-      image: "/Images/gal/3.JPG",
+      image: "/Images/gal/3.jpg",
     },
     {
       title: "Shop Floor",
       subtitle: "Unit-1",
       description: "Traub Machines, Soco Cutting Machines, Soco Chamfering Machine, WIP Area and Inspection area viewed from Office .",
-      image: "/Images/gal/4.JPG",
+      image: "/Images/gal/4.jpg",
     },
     {
       title: "Soco Cutting Machine",
       subtitle: "Rod and Tube Cutting SPM machine",
       description: "Operator operating SOCO cutting machine.",
-      image: "/Images/gal/5.JPG",
+      image: "/Images/gal/5.jpg",
     },
     {
       title: "In-Process inspection",
       subtitle: "Team quality Check",
       description: "Team with Quality head and CEO checking for the quality of the produced products conducting In-Process Inspection.",
-      image: "/Images/gal/6.JPG",
+      image: "/Images/gal/6.jpg",
     },
     {
       title: "Team",
       subtitle: "Group",
       description: "MAC team.",
-      image: "/Images/gal/7.JPG",
+      image: "/Images/gal/7.jpg",
     },
     {
       title: "Training",
       subtitle: "Employee Training",
       description: "Every 6 months employee training is conducted.",
-      image: "/Images/gal/8.JPG",
+      image: "/Images/gal/8.jpg",
     },
     {
       title: "Quality Check",
@@ -150,10 +150,6 @@
       description: "Work in process.",
       image: "/Images/gal/27.JPG",
     },
-
-
-
-
     {
       title: "Thread Rolling Machine",
       subtitle: "Threading",
@@ -203,42 +199,38 @@
       title: "Inspection",
       subtitle: "Inspection Area",
       description: "Maintains a clean and organized inspection workstation using 5S System.",
-      image: "/Images/gal/42.jpg",
+      image: "/Images/gal/42.JPG",
     },
     {
       title: "Cycle Time",
       subtitle: "Corner Piece Cycle Time",
       description: "Corner piece cycle time is displayed on the board for all the employees reference",
-      image: "/Images/gal/43.JPG",
+      image: "/Images/gal/43.jpg",
     },
     {
       title: "Standards",
       subtitle: "ISO Standards",
       description: "Look at the board our processes are in accordance with ISO standards",
-      image: "/Images/gal/44.JPG",
-    },
-   
-     
-   
-    
+      image: "/Images/gal/44.jpg",
+    },   
       {
       title: "Team",
       subtitle: "CEO with Employees",
       description: "A formal gathering of employees with the Chief Executive Officer ",
-      image: "/Images/gal/63.jpg",
+      image: "/Images/gal/63.JPG",
     },
     {
       title: "Team",
       subtitle: "Our Team",
       description: "Rest place for employees",
-      image: "/Images/gal/64.jpg",
+      image: "/Images/gal/64.JPG",
     },
     
     {
       title: "My Team",
       subtitle: "Disciplined Team",
       description: "Each team is assigned to specific zones and following the safety protocols",
-      image: "/Images/gal/66.jpg",
+      image: "/Images/gal/66.JPG",
     },
     {
       title: "Unit-2",
@@ -264,34 +256,24 @@
       description: "A skilled inspector checks each product before dispatch.",
       image: "/Images/gal/70.jpg",
     },
-    
-   
-    
-   
-    
-    
-    {
+       {
       title: "Unit-1",
       subtitle: "Working Area",
       description: "Everyone has zone and follows safety rules",
-      image: "/Images/gal/82.jpg",
+      image: "/Images/gal/82.JPG",
     },
     {
       title: "Work Area",
       subtitle: "Our Team",
       description: "Our employees are skilled, efficient, and follow safety protocols",
-      image: "/Images/gal/83.jpg",
-    },
-    
-    
-   
+      image: "/Images/gal/83.JPG",
+    },   
     {
       title: "In Process Inspection",
       subtitle: "WIP",
       description: "Every employee records in-process inspection",
       image: "/Images/gal/87.jpg",
-    },
-    
+    },    
     {
       title: "Quality Check",
       subtitle: "Inspection by CEO",

@@ -13,7 +13,7 @@ export default function TopBar() {
 
         <div className="flex-1 mx-4 min-w-[200px] overflow-hidden whitespace-nowrap">
           <div className="inline-block animate-marquee whitespace-nowrap font-semibold text-red-600 will-change-transform">
-            🚧 We are expanding to 5000 sq ft new plot at Japanese Park, Tumkur! 🚧 &nbsp;&nbsp;&nbsp;
+            🚧 We are expanding to a new plot at Japanese Park, Vasanthanarsapuru Tumkur! 🚧 &nbsp;&nbsp;&nbsp;
           </div>
         </div>
 

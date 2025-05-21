@@ -108,18 +108,6 @@ export default function HeroSection() {
       image: "Images/gal/15.JPG",
     },
     {
-      title: "Automated Drill",
-      subtitle: "Precision Drilling",
-      description: "Multi-head drills provide consistent holes with minimal error.",
-      image: "Images/gal/16.JPG",
-    },
-    {
-      title: "Seamless Integration",
-      subtitle: "Fabrication Assembly",
-      description: "Components merged to form complete units for industrial systems.",
-      image: "Images/gal/17.JPG",
-    },
-    {
       title: "Rigidity Guaranteed",
       subtitle: "Cross Members",
       description: "Reinforced cross members support mechanical stability in structures.",

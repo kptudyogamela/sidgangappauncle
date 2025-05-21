@@ -46,6 +46,8 @@ export const groupedProducts: Product[] = [
     type: "Plain Bolt",
     images: [11, 12, 13].map(i => `/Images/products/Bolts/${i}.png`)
   },
+
+
   {
     title: "Corner Bracket Piece",
     description: "Used for assembling metal frameworks,structural assemblies, frame construction, or machine supports. Mainly used in electrical enclosure body",
@@ -55,11 +57,24 @@ export const groupedProducts: Product[] = [
   },
 
   {
+    title: "Laser Cutting and CNC Bending Part 1",
+    description: "Laser Cutting and CNC Bending Part 1",
+    category: "Services",
+    type: "Fabrication",
+    images: [25, 26, 30, 32].map(i => `/Images/products/Fabrication/${i}.png`)
+  }, {
+    title: "Laser Cutting and CNC Bending Part II",
+    description: "Laser Cutting and CNC Bending Part II",
+    category: "Services",
+    type: "Fabrication",
+    images: [27, 28, 31].map(i => `/Images/products/Fabrication/${i}.png`)
+  },
+  {
     title: "Corner Bracket Piece",
     description: "Used for assembling metal frameworks,structural assemblies, frame construction, or machine supports. Mainly used in electrical enclosure body",
     category: "Services",
     type: "Fabrication",
-    images: [1, 2, 5, 6, 7, 8, 9, 10].map(i => `/Images/products/corner/${i}.png`)
+    images: [1, 2].map(i => `/Images/products/Fabrication/${i}.png`)
   },
 
   {
