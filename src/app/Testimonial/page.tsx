@@ -54,6 +54,15 @@ const testimonialsData = [
       "Maruti Industries' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
     image: "/Images/testimonials/9.jpg",
   },
+
+  {
+    name: "Prashanth Nadiger",
+    role: "General Manager, Modutec.",
+    message:
+      "Good manufacturing facility prioritizes precision and excellence, driven by a customer-centric team dedicated to delivering exceptional products and services.",
+    image: "/Images/testimonials/modu.png",
+  },
+
   {
     name: "Vinod Raheja",
     role: "Vice President, Nahars Engineering",
@@ -101,6 +110,13 @@ const testimonialsData = [
     message:
       "Maruti Industries' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
     image: "/Images/testimonials/9.jpg",
+  },
+  {
+    name: "Prashanth Nadiger",
+    role: "General Manager, Modutec.",
+    message:
+      "Good manufacturing facility prioritizes precision and excellence, driven by a customer-centric team dedicated to delivering exceptional products and services.",
+    image: "/Images/testimonials/modu.png",
   },
 ];
 
