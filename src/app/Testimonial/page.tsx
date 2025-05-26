@@ -57,7 +57,7 @@ const testimonialsData = [
 
   {
     name: "Prashanth Nadiger",
-    role: "General Manager, Modutec.",
+    role: "Executive Director, Modutec Ready Panels Pvt. Ltd.",
     message:
       "Good manufacturing facility prioritizes precision and excellence, driven by a customer-centric team dedicated to delivering exceptional products and services.",
     image: "/Images/testimonials/modu.png",
@@ -113,7 +113,7 @@ const testimonialsData = [
   },
   {
     name: "Prashanth Nadiger",
-    role: "General Manager, Modutec.",
+    role: "Executive Director, Modutec Ready Panels Pvt. Ltd.",
     message:
       "Good manufacturing facility prioritizes precision and excellence, driven by a customer-centric team dedicated to delivering exceptional products and services.",
     image: "/Images/testimonials/modu.png",
