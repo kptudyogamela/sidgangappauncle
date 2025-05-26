@@ -144,17 +144,26 @@
       description: "WIP .",
       image: "/Images/gal/26.JPG",
     },
-    {
-      title: "In-Process",
-      subtitle: "WIP",
-      description: "Work in process.",
-      image: "/Images/gal/27.JPG",
-    },
+    
     {
       title: "Thread Rolling Machine",
       subtitle: "Threading",
       description: "Threading done for Bolts.",
-      image: "/Images/gal/31.jpg",
+      image: "/Images/gal/27.jpg",
+    },
+    
+    {
+      title: "Final Inspection",
+      subtitle: "Inspection",
+      description: "Quality check.",
+      image: "/Images/gal/28.jpg",
+    },
+    
+    {
+      title: "In-Process",
+      subtitle: "WIP",
+      description: "Work in process.",
+      image: "/Images/gal/31.JPG",
     },
     {
       title: "Corner Piece Production",
