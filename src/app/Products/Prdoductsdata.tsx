@@ -236,27 +236,27 @@ export const groupedProducts: Product[] = [
     description: "Assembly parts, mainly a two wheeler components.",
     category: "Turned Parts",
     type: "Hook Stand SPG",
-    images: [14, 15, 16].map(i => `/Images/products/Turned/${i}.png`)
+    images: [1, 2, 3].map(i => `/Images/products/Tubular/C${i}.png`)
   },
   {
     title: "Bush",
     description: "Bush.",
     category: "Turned Parts",
     type: "Hook Stand SPG",
-    images: [17].map(i => `/Images/products/Turned/${i}.png`)
-  },
-  {
-    title: "Hexagonal head Plain Bolts",
-    description: "Standard bolts used for fastening in assemblies, Automobile industries and in construction buildings.",
-    category: "Turned Parts",
-    type: "Hook Stand SPG",
-    images: [18, 19, 20].map(i => `/Images/products/Turned/${i}.png`)
+    images: ["/Images/products/Tubular/BU.png"]
   },
   {
     title: "Turned Parts",
     description: "Rods with process such as parting, Turning, chamfering, Threading, Tapping etc .",
     category: "Turned Parts",
     type: "Hook Stand SPG",
-    images: [21, 22].map(i => `/Images/products/Turned/${i}.png`)
+    images: [1, 2, 3].map(i => `/Images/products/Turned/TUR${i}.png`)
+  },
+  {
+    title: "Bolt RR Cushion",
+    description: "Rods with process such as parting, Turning, chamfering, Threading, Tapping etc .",
+    category: "Turned Parts",
+    type: "Hook Stand SPG",
+    images: [1, 2, 3, 4].map(i => `/Images/products/Turned/RR${i}.png`)
   },
 ];
