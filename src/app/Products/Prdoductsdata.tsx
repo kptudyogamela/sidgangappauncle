@@ -52,10 +52,6 @@ export const groupedProducts: Product[] = [
     type: "Plain Bolt",
     images: [1, 2, 3, 4].map(i => `/Images/products/Bolts/CB${i}.png`)
   },
-
-
-
-
   {
     title: "Corner Bracket Piece",
     description: "Used for assembling metal frameworks, structural assemblies, frame construction, or machine supports. This component is primarily used in electrical enclosure bodies. Supplied to Rittal, a leading global provider of industrial enclosures and related solutions.",
@@ -121,7 +117,7 @@ export const groupedProducts: Product[] = [
     description: "Used in two wheeler .",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/5.png", "/Images/products/Automobile/RR1.png", "/Images/products/Automobile/RR2.png", "/Images/products/Automobile/RR4.png", "/Images/products/Automobile/RR3.png"]
+    images: ["/Images/products/Automobile/RR5.png", "/Images/products/Automobile/RR1.png", "/Images/products/Automobile/RR2.png", "/Images/products/Automobile/RR4.png", "/Images/products/Automobile/RR3.png"]
   },
   {
     title: "Pipe RR Fork",
