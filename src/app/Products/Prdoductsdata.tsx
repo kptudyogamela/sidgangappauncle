@@ -211,7 +211,7 @@ export const groupedProducts: Product[] = [
     description: "Components used in mechanical and industrial assemblies.",
     category: "Turned Parts",
     type: "Assembly Parts",
-    images: ["PB1", "PB2"].map(i => `/Images/products/Bolts/${i}.png`)
+    images: [1, 2].map(i => `/Images/products/Bolts/PB${i}.png`)
   },
   {
     title: "Tie Rods",
