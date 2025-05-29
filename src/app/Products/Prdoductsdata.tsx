@@ -117,7 +117,7 @@ export const groupedProducts: Product[] = [
     description: "Used in two wheeler .",
     category: "Automobile",
     type: "Fabrication",
-    images: ["/Images/products/Automobile/RR5.png", "/Images/products/Automobile/RR1.png", "/Images/products/Automobile/RR2.png", "/Images/products/Automobile/RR4.png", "/Images/products/Automobile/RR3.png"]
+    images: ["/Images/products/Automobile/RR1.png", "/Images/products/Automobile/RR2.png", "/Images/products/Automobile/RR4.png", "/Images/products/Automobile/RR3.png"]
   },
   {
     title: "Pipe RR Fork",
