@@ -87,14 +87,14 @@ export default function HeroSection() {
       title: "Clean Cut",
       subtitle: "Sheet Metal Processing",
       description: "Smooth sheet metal processing for housing and enclosures.",
-      image: "Images/gal/12.JPG",
+      image: "Images/gal/12.jpg",
     },
-    {
-      title: "Fasten Right",
-      subtitle: "Assembly Fasteners",
-      description: "Precision fasteners for high-stress mechanical joins.",
-      image: "Images/gal/13.JPG",
-    },
+    // {
+    //   title: "Fasten Right",
+    //   subtitle: "Assembly Fasteners",
+    //   description: "Precision fasteners for high-stress mechanical joins.",
+    //   image: "Images/gal/13.JPG",
+    // },
     {
       title: "Even Finish",
       subtitle: "Surface Polishing",
@@ -198,12 +198,12 @@ export default function HeroSection() {
       description: "Press machines shaping and flattening metal sheets efficiently.",
       image: "Images/gal/35.jpg",
     },
-    {
-      title: "Inventory Precision",
-      subtitle: "Parts Management",
-      description: "Barcode-based inventory system streamlining the workflow.",
-      image: "Images/gal/36.jpg",
-    },
+    // {
+    //   title: "Inventory Precision",
+    //   subtitle: "Parts Management",
+    //   description: "Barcode-based inventory system streamlining the workflow.",
+    //   image: "Images/gal/36.jpg",
+    // },
     {
       title: "Clean and Coated",
       subtitle: "Surface Treatment",

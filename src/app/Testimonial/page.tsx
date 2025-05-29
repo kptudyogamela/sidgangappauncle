@@ -87,7 +87,7 @@ const testimonialsData = [
   {
     name: "GIRISH",
     role: "General Manager, Quality, Rittal India Ltd",
-    message: "We’ve been working with MAC for over 06 years now.",
+    message: "Overall good performance handling of complicated products.",
     image: "/Images/testimonials/3.jpg",
   },
   {
