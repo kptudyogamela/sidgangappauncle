@@ -149,21 +149,21 @@
       title: "Thread Rolling Machine",
       subtitle: "Threading",
       description: "Threading done for Bolts.",
-      image: "/Images/gal/27.jpg",
+      image: "/Images/gal/27.JPG",
     },
     
     {
       title: "Final Inspection",
       subtitle: "Inspection",
       description: "Quality check.",
-      image: "/Images/gal/28.jpg",
+      image: "/Images/gal/28.JPG",
     },
     
     {
       title: "In-Process",
       subtitle: "WIP",
       description: "Work in process.",
-      image: "/Images/gal/31.JPG",
+      image: "/Images/gal/31.jpg",
     },
     {
       title: "Corner Piece Production",
