@@ -66,7 +66,7 @@ const services = [
     category: 'DRILLING & TAPPING',
     title: 'SPM Hole Chamfering Machines',
     description: 'Ideal for deburring and chamfering drilled holes. This machine helps remove sharp edges and ensures smooth operation for parts requiring precise finishes.',
-    image: '/Images/machines/secondary operating.JPG',
+    image: '/Images/machines/secondary operating.jpg',
     video: '/videos/hole-chamfering.mp4',
     count: 2,
   },
