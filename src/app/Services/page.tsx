@@ -156,11 +156,11 @@ const ServicesSection = () => {
                   <div className="text-sm font-semibold text-gray-700">
                     Number of Machines : {service.count.toString().padStart(2, '0')}
                   </div>
-                  {service.video && (
+                  {/* {service.video && (
                     <div className="flex items-center flex-wrap mt-4">
                       <button
                         className="text-red-700 hover:text-red-500 cursor-pointer inline-flex items-center md:mb-2 lg:mb-0"
-                        onClick={() => setVideoSrc(service.video)}
+                      // onClick={() => setVideoSrc(service.video)}
                       >
                         Learn More
                         <svg
@@ -177,7 +177,7 @@ const ServicesSection = () => {
                         </svg>
                       </button>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

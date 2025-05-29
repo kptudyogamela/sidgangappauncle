@@ -58,7 +58,7 @@ export const groupedProducts: Product[] = [
 
   {
     title: "Corner Bracket Piece",
-    description: "Used for assembling metal frameworks,structural assemblies, frame construction, or machine supports. Mainly used in electrical enclosure body",
+    description: "Used for assembling metal frameworks, structural assemblies, frame construction, or machine supports. This component is primarily used in electrical enclosure bodies. Supplied to Rittal, a leading global provider of industrial enclosures and related solutions.",
     category: "Corner",
     type: "Fabrication",
     images: [1, 2, 3, 4, 5, 6, 7].map(i => `/Images/products/corner/CP${i}.png`)

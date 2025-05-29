@@ -27,22 +27,22 @@ const clients = [
   {
     icon: '/Images/trusted/logo77.png',
     name: 'MODUTEC READY PANELS PVT LTD',
-    description: 'Supplier of M12 & M16  Tie Rods for Cable Drums ',
+    description: 'Job work supplier for laser cutting and CNC Bending parts.',
   },
   {
     icon: '/Images/trusted/logo9.png',
     name: 'MUNGO FIXINGS INDIA PRIVATE LIMITED',
-    description: 'Supplier of M12 & M16  Tie Rods for Cable Drums ',
+    description: 'Supplier of Construction Bolts.',
   },
   {
     icon: '/Images/trusted/logo88.png',
     name: 'Synergy Punching',
-    description: 'Supplier of M12 & M16  Tie Rods for Cable Drums ',
+    description: 'Job work supplier for laser cutting and CNC Bending parts.',
   },
   {
     icon: '/Images/trusted/logo6.png',
     name: 'Havells India Ltd – Tumkur',
-    description: 'Supplier of M12 & M16  Tie Rods for Cable Drums ',
+    description: 'Supplier of MS-plates, M12 & M16 Tie Rods for Cable Drums ',
   },
 ];
 
