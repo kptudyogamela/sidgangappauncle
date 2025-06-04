@@ -119,7 +119,7 @@ const services = [
   {
     category: 'SECONDARY OPERATIONS',
     title: 'SPM Rod and Tube Cutting Machine',
-    description: 'For fast and accurate cutting of rods up to 16 mm diameter. The SPM rod cutting machine helps streamline production in industries that require precise rod lengths for assembly.',
+    description: 'For fast and accurate cutting of tubes and rods up to 50mm diameter, length upto 1000mm. The SPM rod cutting machine helps streamline production in industries that require precise rod lengths for assembly.',
     image: '/Images/machines/SOCO Cutting Machine.JPG',
     video: '/videos/rod-cutting.mp4',
     count: 1,

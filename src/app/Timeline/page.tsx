@@ -22,7 +22,19 @@ function Timeline() {
                 <p className="leading-relaxed">MAC was established in Peenya Industrial Area with 8 employees and basic machinery for turned components.</p>
               </div>
             </div>
-
+            {/* 2015: Certification */}
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                <span className="text-sm font-bold">2015</span>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">ISO Certified</h2>
+                <p className="leading-relaxed">Achieved ISO certification and adopted 5S, QMS, and Lean practices for consistent process improvement.</p>
+              </div>
+            </div>
             {/* 2016: Laser Tech */}
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
@@ -32,12 +44,24 @@ function Timeline() {
                 <span className="text-sm font-bold">2016</span>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Technology Upgrade</h2>
-                <p className="leading-relaxed">Installed 3kW laser cutting machine & CNC bending machine to offer sheet metal fabrication and job work.</p>
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Cients Onboarding</h2>
+                <p className="leading-relaxed">Indo Autotech and Surin Automotive added to client base. Focus on assembly and component kits.</p>
               </div>
             </div>
-
-            {/* 2019: Certification */}
+            {/* 2018: Laser Tech */}
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                <span className="text-sm font-bold">2018</span>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Cients Onboarding</h2>
+                <p className="leading-relaxed">Nahar's and Badve Industries added to the client base. Focus on assembly and component kits.</p>
+              </div>
+            </div>
+            {/* 2016: Laser Tech */}
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -46,22 +70,53 @@ function Timeline() {
                 <span className="text-sm font-bold">2019</span>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">ISO Certified</h2>
-                <p className="leading-relaxed">Achieved ISO certification and adopted 5S, QMS, and Lean practices for consistent process improvement.</p>
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Cients Onboarding</h2>
+                <p className="leading-relaxed">Rittal added to client base. Focus on Electrical Enclosure Components.</p>
               </div>
             </div>
 
-            {/* 2023: Client Expansion */}
+
+            {/* 2020: Infrastructure Boost */}
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">2023</span>
+                <span className="text-sm font-bold">2020</span>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Infrastructure Expansion</h2>
+                <p className="leading-relaxed">Planned investment in Resistance Welding machine, SPM Drilling Machine, SPM Chamfering Machines.</p>
+              </div>
+            </div>
+
+            {/* 2022: Client Expansion */}
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                <span className="text-sm font-bold">2022</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Clients Onboarded</h2>
-                <p className="leading-relaxed">Indo Autotech, Havells, Rittal India, and Surin Automotive added to client base. Focus on assembly and component kits.</p>
+                <p className="leading-relaxed">Swastid Engineering added to client base. Focus on assembly and component kits.</p>
+              </div>
+            </div>
+
+
+
+            {/* 2024: Infrastructure Boost */}
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                <span className="text-sm font-bold">2024</span>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Infrastructure Expansion</h2>
+                <p className="leading-relaxed">Planned investment in Laser Cutting Machine,, CNC Bending Machine & Threading Machine.</p>
               </div>
             </div>
 
@@ -74,8 +129,8 @@ function Timeline() {
                 <span className="text-sm font-bold">2025</span>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Infrastructure Expansion</h2>
-                <p className="leading-relaxed">Planned investment in high-tonnage CNC machines, warehouse automation, and IoT-enabled tracking systems.</p>
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Planning for Expansion</h2>
+                <p className="leading-relaxed">We are planning to expand our operations with a new plant aimed at supplying Tier I global OEMs. The proposed facility, covering 50,000 sq. ft., is to be set up near Vasanthnarasapura in Tumkur District, with construction and machinery installation currently in the planning phase. </p>
               </div>
             </div>
 

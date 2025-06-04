@@ -9,19 +9,21 @@ export default function InfrastructureMap() {
       desc: `Peenya 2nd Stage, Bangalore | 2,000 sq.ft | Manual lathes, threading, chamfering | 8 employees | Focus on auto-turned parts`
     },
     {
-      title: 'Process Enhancement (2016)',
-      icon: <Settings className="w-8 h-8 text-yellow-600" />,
-      desc: `Added CNC Bending (110T) & 3kW Laser Cutter | In-house drilling, welding, fabrication | Job work services began`
-    },
-    {
-      title: 'Workflow Optimization (2019)',
+      title: 'Workflow Optimization (2015)',
       icon: <Warehouse className="w-8 h-8 text-blue-600" />,
       desc: `Warehouse layout for raw & finished goods | Quality bay with gauges, templates | ISO, 5S, Kaizen practices adopted`
     },
     {
-      title: 'Digital Shift (2023-2025)',
+      title: 'Process Enhancement (2018-2025)',
+      icon: <Settings className="w-8 h-8 text-yellow-600" />,
+      desc: `Added CNC Bending (110T) & 3kW Laser Cutter | In-house drilling, welding, fabrication | Job work services began `
+    },
+    {
+      title: 'Digital Shift (2025)',
       icon: <MonitorCheck className="w-8 h-8 text-green-600" />,
-      desc: `IoT job tracking | MES setup | Barcode & energy monitoring | Evaluating Robotic Welding & Fiber Laser (5kW+)`
+      desc: `Digitally integrated machinery like CNC and laser machines installed, production for
+ precision parts for EVs and smart vehicles.
+Increased use of digital quality control and traceability systems.`
     },
     {
       title: 'Vision 2027 – Smart Factory',

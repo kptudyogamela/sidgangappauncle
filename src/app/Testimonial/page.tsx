@@ -158,10 +158,8 @@ const Testimonials = () => {
         </div>
 
         {/* Carousel below the video */}
-        <div
-          className="overflow-hidden -mt-20"  // negative margin-top to overlap on video
-          ref={emblaRef}
-        >
+        <div className="overflow-hidden mt-0 md:-mt-20" ref={emblaRef}>
+
           <div className="flex gap-6 pr-6">
             {testimonialsData.map((item, index) => (
               <div

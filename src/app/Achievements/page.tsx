@@ -31,22 +31,34 @@ function Achievements() {
                 <td className="px-6 py-4">Start of MAC</td>
               </tr>
               <tr>
-                <td className="px-6 py-4">2016</td>
-                <td className="px-6 py-4">Introduce Laser Cutting</td>
-                <td className="px-6 py-4">Installed 3kW laser cutting & CNC bending machines</td>
-                <td className="px-6 py-4">Tech upgrade</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4">2019</td>
+                <td className="px-6 py-4">2015</td>
                 <td className="px-6 py-4">ISO Certification</td>
                 <td className="px-6 py-4">Achieved ISO & adopted 5S, QMS standards</td>
                 <td className="px-6 py-4">Process improvement</td>
               </tr>
               <tr>
-                <td className="px-6 py-4">2023</td>
+                <td className="px-6 py-4">2015</td>
                 <td className="px-6 py-4">Expand Client Base</td>
-                <td className="px-6 py-4">Onboarded Indo Autotech, Havells, Rittal India</td>
+                <td className="px-6 py-4">Onboarded Indo Autotech & Surin</td>
                 <td className="px-6 py-4">Client growth</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4">2020</td>
+                <td className="px-6 py-4">Expand Client Base</td>
+                <td className="px-6 py-4">Onboarded Rittal and New Machines Added.</td>
+                <td className="px-6 py-4">Client growth</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4">2024</td>
+                <td className="px-6 py-4">Expand Client Base</td>
+                <td className="px-6 py-4">Onboarded Havells and Mungo Rittal India</td>
+                <td className="px-6 py-4">Client growth</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4">2024</td>
+                <td className="px-6 py-4">Introduce Laser Cutting</td>
+                <td className="px-6 py-4">Installed 3kW laser cutting & CNC bending machines</td>
+                <td className="px-6 py-4">Tech upgrade</td>
               </tr>
               <tr>
                 <td className="px-6 py-4">2025</td>

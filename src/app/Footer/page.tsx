@@ -132,39 +132,41 @@ export default function Footer() {
             </h2>
             <nav className="list-none space-y-2">
               <li>
-                <a href="/Products?filter=Corner" className="text-gray-600 hover:text-red-500">
+                <Link href="/Products?filter=Corner" className="text-gray-600 hover:text-red-500">
                   Corner Piece
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Products?filter=Tie%20Rods%20and%20Bolts" className="text-gray-600 hover:text-red-500">
+                <Link href="/Products?filter=Tie%20Rods%20and%20Bolts" className="text-gray-600 hover:text-red-500">
                   Tie Rods and Sag Rods
-                </a>
-              </li><li>
-                <a href="/Products?filter=Laser%20Cutting%20%26%20Bending" className="text-gray-600 hover:text-red-500">
+                </Link>
+              </li>
+              <li>
+                <Link href="/Products?filter=Laser%20Cutting%20%26%20Bending" className="text-gray-600 hover:text-red-500">
                   Laser Cut Parts
-                </a>
+                </Link>
               </li>
-
-              {/* <li>
-                <a href="/Products?filter=CNC%20Bending%20Parts" className="text-gray-600 hover:text-red-500">
-                  CNC Bending Parts
-                </a>
-              </li> */}
+              {/* 
+  <li>
+    <Link href="/Products?filter=CNC%20Bending%20Parts" className="text-gray-600 hover:text-red-500">
+      CNC Bending Parts
+    </Link>
+  </li> 
+  */}
               <li>
-                <a href="/Products?filter=Automobile" className="text-gray-600 hover:text-red-500">
+                <Link href="/Products?filter=Automobile" className="text-gray-600 hover:text-red-500">
                   Automobile
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Products?filter=Tubular%20Parts" className="text-gray-600 hover:text-red-500">
+                <Link href="/Products?filter=Tubular%20Parts" className="text-gray-600 hover:text-red-500">
                   Automobile Tubular Parts
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Products?filter=Turned%20Parts" className="text-gray-600 hover:text-red-500">
+                <Link href="/Products?filter=Turned%20Parts" className="text-gray-600 hover:text-red-500">
                   Automobile Turned Parts
-                </a>
+                </Link>
               </li>
             </nav>
           </div>

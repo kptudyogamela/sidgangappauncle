@@ -151,14 +151,16 @@ html, body {
   animation: floatLR 15s ease-in-out infinite alternate;
 }
 
+
 @keyframes floatLR {
   0% {
-    transform: translateX(-100%); /* start fully left out of view */
+    transform: translateX(-100%); /* text starts fully outside left */
   }
   100% {
-    transform: translateX(100%); /* move fully right out of view */
+    transform: translateX(calc(100% - 10ch)); /* stops when first character hits right edge */
   }
 }
+
 
 @keyframes slideInFromLeft {
   0% {
