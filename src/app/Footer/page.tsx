@@ -132,23 +132,38 @@ export default function Footer() {
             </h2>
             <nav className="list-none space-y-2">
               <li>
-                <a href="/products#laser" className="text-gray-600 hover:text-red-500">
+                <a href="/Products?filter=Corner" className="text-gray-600 hover:text-red-500">
+                  Corner Piece
+                </a>
+              </li>
+              <li>
+                <a href="/Products?filter=Tie%20Rods%20and%20Bolts" className="text-gray-600 hover:text-red-500">
+                  Tie Rods and Sag Rods
+                </a>
+              </li><li>
+                <a href="/Products?filter=Laser%20Cutting%20%26%20Bending" className="text-gray-600 hover:text-red-500">
                   Laser Cut Parts
                 </a>
               </li>
+
+              {/* <li>
+                <a href="/Products?filter=CNC%20Bending%20Parts" className="text-gray-600 hover:text-red-500">
+                  CNC Bending Parts
+                </a>
+              </li> */}
               <li>
-                <a href="/products#bending" className="text-gray-600 hover:text-red-500">
-                  CNC Bending
+                <a href="/Products?filter=Automobile" className="text-gray-600 hover:text-red-500">
+                  Automobile
                 </a>
               </li>
               <li>
-                <a href="/products#rods" className="text-gray-600 hover:text-red-500">
-                  Tie Rods & Bolts
+                <a href="/Products?filter=Tubular%20Parts" className="text-gray-600 hover:text-red-500">
+                  Automobile Tubular Parts
                 </a>
               </li>
               <li>
-                <a href="/products#enclosure" className="text-gray-600 hover:text-red-500">
-                  Electrical Parts
+                <a href="/Products?filter=Turned%20Parts" className="text-gray-600 hover:text-red-500">
+                  Automobile Turned Parts
                 </a>
               </li>
             </nav>

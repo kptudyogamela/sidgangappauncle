@@ -44,14 +44,14 @@ const testimonialsData = [
     name: "Kumar MD",
     role: "General Manager, Operations, Balmer Lawrie Van Leer Ltd",
     message:
-      "I sincerely appreciate Maruti Industries' commitment to lean manufacturing. It's clearly driving greater efficiency, improving quality, and reducing waste—positioning the company as a leader in process optimization. Truly commendable!",
+      "I sincerely appreciate Maruthi Auto Components' commitment to lean manufacturing. It's clearly driving greater efficiency, improving quality, and reducing waste—positioning the company as a leader in process optimization. Truly commendable!",
     image: "/Images/testimonials/10.jpg",
   },
   {
     name: "Vishweshwara Prasad",
     role: "General Manager, JHY Industries.",
     message:
-      "Maruti Industries' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
+      "Maruthi Auto Components' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
     image: "/Images/testimonials/9.jpg",
   },
 
@@ -101,14 +101,14 @@ const testimonialsData = [
     name: "Kumar MD",
     role: "General Manager, Operations, Balmer Lawrie Van Leer Ltd",
     message:
-      "I sincerely appreciate Maruti Industries' commitment to lean manufacturing. It's clearly driving greater efficiency, improving quality, and reducing waste—positioning the company as a leader in process optimization. Truly commendable!",
+      "I sincerely appreciate Maruthi Auto Components' commitment to lean manufacturing. It's clearly driving greater efficiency, improving quality, and reducing waste—positioning the company as a leader in process optimization. Truly commendable!",
     image: "/Images/testimonials/10.jpg",
   },
   {
     name: "Vishweshwara Prasad",
     role: "General Manager, JHY Industries.",
     message:
-      "Maruti Industries' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
+      "Maruthi Auto Components' lean manufacturing approach is fostering significant efficiency improvements and positioning the company as an industry leader in process optimization.",
     image: "/Images/testimonials/9.jpg",
   },
   {
@@ -146,45 +146,44 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Video at the top */}
-        <div className="h-74 w-full mb-10">
+        {/* Video container */}
+        <div className="w-full mb-10">
           <CustomVideoPlayer
             src="/Images/videos/1.mp4"
             title="Foreign Delegate Testimonial"
           />
           <p className="text-sm text-gray-600 mt-4 text-center">
-            Video testimonial from our international partner.
+            {/* Video testimonial from our international partner. */}
           </p>
         </div>
 
-        <p className="text-sm text-gray-600 mt-4 text-center">
-          Video testimonial from our international partner.
-        </p>
-      </div>
-
-      {/* Carousel below the video */}
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-6 pr-6">
-          {testimonialsData.map((item, index) => (
-            <div
-              key={index}
-              className="min-w-[90%] sm:min-w-[70%] md:min-w-[50%] lg:min-w-[33.33%] xl:min-w-[33.33%] bg-white shadow-md rounded-lg p-6"
-            >
-              <div className="text-center">
-                <Image
-                  alt={item.name}
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 mb-4 object-cover rounded-full border-2 border-gray-200 mx-auto"
-                  src={item.image}
-                />
-                <p className="text-sm text-gray-700">{item.message}</p>
-                <span className="inline-block h-1 w-10 rounded bg-red-500 mt-4 mb-2" />
-                <h2 className="text-gray-900 font-semibold text-sm">{item.name}</h2>
-                <p className="text-gray-500 text-xs">{item.role}</p>
+        {/* Carousel below the video */}
+        <div
+          className="overflow-hidden -mt-20"  // negative margin-top to overlap on video
+          ref={emblaRef}
+        >
+          <div className="flex gap-6 pr-6">
+            {testimonialsData.map((item, index) => (
+              <div
+                key={index}
+                className="min-w-[90%] sm:min-w-[70%] md:min-w-[50%] lg:min-w-[33.33%] xl:min-w-[33.33%] bg-white shadow-md rounded-lg p-6"
+              >
+                <div className="text-center">
+                  <Image
+                    alt={item.name}
+                    width={80}
+                    height={80}
+                    className="w-20 h-20 mb-4 object-cover rounded-full border-2 border-gray-200 mx-auto"
+                    src={item.image}
+                  />
+                  <p className="text-sm text-gray-700">{item.message}</p>
+                  <span className="inline-block h-1 w-10 rounded bg-red-500 mt-4 mb-2" />
+                  <h2 className="text-gray-900 font-semibold text-sm">{item.name}</h2>
+                  <p className="text-gray-500 text-xs">{item.role}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section >

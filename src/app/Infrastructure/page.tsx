@@ -32,7 +32,7 @@ function Infrastructure() {
               <p className="leading-relaxed mt-2">
                 {/* We are continuously upgrading our machine line-up to include fiber lasers, tube bending, and robotic welding — positioning ourselves for future demands. */}
               </p>
-              <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button>
+              {/* <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button> */}
             </div>
           </div>
 
@@ -51,7 +51,7 @@ function Infrastructure() {
               <p className="leading-relaxed mt-2">
                 With implementation of 5S, Kaizen, and internal audits, we’ve built a culture of quality excellence within every department.
               </p>
-              <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button>
+              {/* <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button> */}
             </div>
           </div>
 
@@ -70,7 +70,7 @@ function Infrastructure() {
               <p className="leading-relaxed mt-2">
                 Future-ready infrastructure with plans to implement IoT tracking, MES systems, automated sheet handling and energy monitoring to align with Industry 4.0 standards.
               </p>
-              <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button>
+              {/* <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button> */}
             </div>
           </div>
 
@@ -91,7 +91,7 @@ function Infrastructure() {
               <p className="leading-relaxed mt-2">
 
               </p>
-              <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button>
+              {/* <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Learn More</button> */}
             </div>
           </div>
 

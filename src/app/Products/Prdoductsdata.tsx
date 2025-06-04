@@ -63,21 +63,21 @@ export const groupedProducts: Product[] = [
 
   {
     title: "Laser Cutting and CNC Bending Part 1",
-    description: "Laser Cutting and CNC Bending Part 1",
+    description: "Precision-manufactured sheet metal component fabricated using advanced laser cutting and CNC bending processes. This part is designed for high-strength and accuracy, commonly used in industrial machinery, electrical enclosures, capital equipment, and mechanical assemblies. With multiple mounting holes and a robust profile, it serves as a reliable structural or mounting bracket in various OEM and custom applications. Suitable for high-volume job work where dimensional consistency and performance are critical.",
     category: "Laser Cutting & Bending",
     type: "Fabrication",
     images: [11, 12, 13, 14].map(i => `/Images/products/Fabrication/LB${i}.png`)
   },
   {
     title: "Laser Cutting and CNC Bending Part II",
-    description: "Laser Cutting and CNC Bending Part II",
+    description: "This laser-cut and CNC-bent metal bracket is engineered for mounting and structural support applications in industrial machinery and enclosures. Designed with precision slots and bend angles, it offers versatile attachment points and reliable load-bearing capability. Commonly used in electrical cabinets, capital machinery, and customized assemblies, this component ensures durability, ease of installation, and dimensional accuracy. Ideal for job work involving medium to high-volume production.",
     category: "Laser Cutting & Bending",
     type: "Fabrication",
     images: [21, 22, 23, 24].map(i => `/Images/products/Fabrication/LB${i}.png`)
   },
   {
     title: "Laser cutting and bending part III",
-    description: "Job work on sheet metal done",
+    description: "This heavy-duty U-bracket is precisely manufactured using laser cutting and CNC bending techniques to ensure dimensional consistency and structural reliability. Commonly used in electrical enclosures, machine frames, support fixtures, and capital equipment, it features a robust design ideal for load-bearing assemblies and modular structures. With pre-drilled holes for mounting, this bracket is ideal for high-precision industrial applications and customized fabrication requirements.",
     category: "Laser Cutting & Bending",
     type: "Fabrication",
     images: [31, 32, 33, 34].map(i => `/Images/products/Fabrication/LB${i}.png`)
@@ -86,7 +86,7 @@ export const groupedProducts: Product[] = [
 
   {
     title: "Washers",
-    description: "Flat washers used in mechanical assemblies to distribute load and reduce wear.",
+    description: "This is a high-quality laser-cut mild steel washer designed for use in mechanical assemblies, structural frameworks, and heavy-duty machinery. The washer provides even load distribution and helps prevent surface damage when tightening bolts or screws. Manufactured with precision to meet industrial tolerances, it is suitable for applications in enclosures, capital machines, and customized fabrication work. The smooth finish and accurate internal diameter ensure a snug fit for various fastening requirements.",
     category: "Laser Cutting & Bending",
     type: "Washer",
     images: [1, 2].map(i => `/Images/products/Services/W${i}.png`)
@@ -236,7 +236,7 @@ export const groupedProducts: Product[] = [
   },
   {
     title: "Bush",
-    description: "Bush.",
+    description: "A rod with operations drilling, tapping and chamfering.",
     category: "Turned Parts",
     type: "Hook Stand SPG",
     images: ["/Images/products/Tubular/BU.png"]

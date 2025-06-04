@@ -70,7 +70,7 @@ function Ourstory() {
                 <br /><br /> */}
                 From humble beginnings to becoming a trusted supplier to brands like Indo Autotech, Badve Engineering, Surin Automotive, Rittal India, Swastid India Pvt Ltd, Havells, Mungo Fixings India Pvt Ltd, Modutec READY PANELS PVT LTD, Synergy Punchings our journey reflects commitment, consistency, and quality without compromise.
               </p>
-              <a href="#" className="text-red-500 inline-flex items-center hover:underline">
+              {/* <a href="#" className="text-red-500 inline-flex items-center hover:underline">
                 Learn More
                 <svg
                   fill="none"
@@ -84,7 +84,7 @@ function Ourstory() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

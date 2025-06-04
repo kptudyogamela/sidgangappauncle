@@ -68,7 +68,7 @@ const ClientsSection = () => {
               <div className="flex-grow pl-6">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">{client.name}</h2>
                 <p className="leading-relaxed text-base">{client.description}</p>
-                <a className="mt-3 text-red-500 inline-flex items-center cursor-pointer">
+                {/* <a className="mt-3 text-red-500 inline-flex items-center cursor-pointer">
                   Learn More
                   <svg
                     fill="none"
@@ -81,7 +81,7 @@ const ClientsSection = () => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

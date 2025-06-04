@@ -31,7 +31,7 @@ const services = [
   {
     category: 'TUBE PROCESSING',
     title: 'Dia Reducing Machine',
-    description: 'Reduces the diameter of rods or tubes without compromising strength. This machine ensures uniformity in tube size and is used widely in metalworking and tubing industries.',
+    description: 'Reduces the diameter of rods or tubes without compromising strength. This machine ensures uniformity in tube size and is widely used in the metalworking and tubing industries. We can reduce tubes or rods to the required diameter as per customer specifications. Major applications include processes such as threading, grooving, swaging, and other precision machining operations.',
     image: '/Images/machines/dia.jpg',
     video: '/videos/dia-reducing.mp4',
     count: 1,
@@ -39,7 +39,7 @@ const services = [
   {
     category: 'TUBE PROCESSING',
     title: 'SPM ID OD Chamfering Machine',
-    description: 'Used for internal and external chamfering of cylindrical components up to 50 mm. This machine is designed to prepare edges for threading or welding, improving product quality and ease of assembly.',
+    description: 'Used for internal and external chamfering of tubes up to 50 mm. This machine is designed to prepare edges for threading or welding, improving product quality and ease of assembly.',
     image: '/Images/machines/SOCO Chamfering Machine.JPG',
     video: '/videos/chamfering.mp4',
     count: 1,
@@ -93,7 +93,7 @@ const services = [
   {
     category: 'THREADING & WELDING',
     title: '200 KVA Resistance Welding Machine',
-    description: 'High-power welding machine used for joining metal parts with resistance heating. This machine offers precision and consistency in welding parts like automotive components and electrical connections.',
+    description: 'High-power welding machine used for joining metal parts through resistance heating. This machine offers precision and consistency in welding parts such as automotive components and electrical connections. The main purpose is to provide greater strength between two welded parts, ensuring durable and reliable joints. The breaking strength will be more than 770 Kgs.',
     image: '/Images/machines/welding.jpg',
     video: '/videos/welding.mp4',
     count: 1,
@@ -102,12 +102,20 @@ const services = [
   // SECONDARY OPERATIONS (5)
   {
     category: 'SECONDARY OPERATIONS',
+    title: 'Tig Welding Machines',
+    description: 'Used for secondary machining operations such as finishing, shaping, or drilling. These machines provide essential post-processing tasks for enhancing component quality and finishing.',
+    image: '/Images/machines/tig welding.jpg',
+    video: '/videos/secondary.mp4',
+    count: 4,
+  }, {
+    category: 'SECONDARY OPERATIONS',
     title: 'Secondary Operation Machines',
     description: 'Used for secondary machining operations such as finishing, shaping, or drilling. These machines provide essential post-processing tasks for enhancing component quality and finishing.',
     image: '/Images/machines/tig welding.jpg',
     video: '/videos/secondary.mp4',
     count: 4,
   },
+
   {
     category: 'SECONDARY OPERATIONS',
     title: 'SPM Rod and Tube Cutting Machine',

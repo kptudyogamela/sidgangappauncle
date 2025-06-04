@@ -15,7 +15,7 @@ function Timeline() {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">13</span>
+                <span className="text-sm font-bold">2013</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Establishment</h2>
@@ -29,7 +29,7 @@ function Timeline() {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">16</span>
+                <span className="text-sm font-bold">2016</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Technology Upgrade</h2>
@@ -43,7 +43,7 @@ function Timeline() {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">19</span>
+                <span className="text-sm font-bold">2019</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">ISO Certified</h2>
@@ -57,7 +57,7 @@ function Timeline() {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">23</span>
+                <span className="text-sm font-bold">2023</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Clients Onboarded</h2>
@@ -71,7 +71,7 @@ function Timeline() {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">25</span>
+                <span className="text-sm font-bold">2025</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Infrastructure Expansion</h2>
@@ -82,7 +82,7 @@ function Timeline() {
             {/* 2027: Global OEM Supply */}
             <div className="flex relative">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
-                <span className="text-sm font-bold">27</span>
+                <span className="text-sm font-bold">2027</span>
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Vision 2027</h2>

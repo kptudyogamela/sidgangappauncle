@@ -8,18 +8,20 @@ export default function TopBar() {
         {/* Left: Phone and Email */}
         <div className="text-gray-800 flex items-center flex-wrap gap-2 min-w-[220px]">
           <span>📞 93437 77577 or 90082 34224</span>
-          <span className="hidden sm:inline"> | ✉️ maruthiautocomponents@gmail.com</span>
+          <span className="inline"> | ✉️ maruthiautocomponents@gmail.com</span>
         </div>
 
-        <div className="flex-1 mx-4 min-w-[200px] overflow-hidden whitespace-nowrap">
-          <div className="inline-block animate-marquee whitespace-nowrap font-semibold text-red-600 will-change-transform">
+        <div className="scroll-wrapper">
+          <div className="scroll-track font-semibold text-red-600 whitespace-nowrap">
             🚧 We are expanding to a new plot at Japanese Park, Vasanthanarsapuru Tumkur! 🚧 &nbsp;&nbsp;&nbsp;
           </div>
         </div>
 
 
+
+
         {/* Right: Social Icons */}
-        <div className="flex items-center gap-3 min-w-[150px] justify-end">
+        <div className="flex items-center gap-3 min-w-[150px] justify-end hidden sm:flex">
           <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Facebook">
             <FaFacebookF className="w-5 h-4" />
           </a>
