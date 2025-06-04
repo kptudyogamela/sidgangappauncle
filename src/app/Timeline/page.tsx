@@ -58,7 +58,7 @@ function Timeline() {
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">New Cients Onboarding</h2>
-                <p className="leading-relaxed">Nahar's and Badve Industries added to the client base. Focus on assembly and component kits.</p>
+                <p className="leading-relaxed">Nahar&apos;s and Badve Industries added to the client base. Focus on assembly and component kits.</p>
               </div>
             </div>
             {/* 2016: Laser Tech */}
