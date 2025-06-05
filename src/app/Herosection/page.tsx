@@ -216,12 +216,12 @@ export default function HeroSection() {
       description: "Press-fit operations joining critical pieces without welding.",
       image: "Images/gal/41.jpg",
     },
-    {
-      title: "Press Fit",
-      subtitle: "Part Joining",
-      description: "Press-fit operations joining critical pieces without welding.",
-      image: "Images/gal/41.png",
-    },
+    // {
+    //   title: "Press Fit",
+    //   subtitle: "Part Joining",
+    //   description: "Press-fit operations joining critical pieces without welding.",
+    //   image: "Images/gal/41.png",
+    // },
     {
       title: "Logistics Ready",
       subtitle: "Shipping Bay",

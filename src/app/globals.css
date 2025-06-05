@@ -140,7 +140,27 @@ html, body {
   }
 }
 
-.scroll-wrapper {
+     .scroll-wrapper {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .scroll-track {
+          display: inline-block;
+          animation: floatLR 10s ease-in-out infinite alternate;
+          white-space: nowrap;
+        }
+          @keyframes floatLR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% - 100px));
+  }
+}
+
+/* .scroll-wrapper {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
@@ -154,12 +174,12 @@ html, body {
 
 @keyframes floatLR {
   0% {
-    transform: translateX(-100%); /* text starts fully outside left */
+    transform: translateX(-100%); 
   }
   100% {
-    transform: translateX(calc(100% - 10ch)); /* stops when first character hits right edge */
+    transform: translateX(calc(100% - 10ch)); 
   }
-}
+} */
 
 
 @keyframes slideInFromLeft {

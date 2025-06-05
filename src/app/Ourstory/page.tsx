@@ -63,7 +63,7 @@ function Ourstory() {
 
                 We specialize in the manufacturing of precision auto-turned components and tubular parts including tie rods, slag rods, and foundation bolts. Our infrastructure includes Laser Cutting (3kW), CNC Bending (110T), Soco Cutting and Soco Chamferings, Special purpose Multi-head Drilling and Tapping Machines, Various Sizes of Traub Machines and Secondary Operation Machines, Thread Rolling Machines and High Accuracy Dia Reducing Machines, 220V Resistant Welding Machines.
                 <br /><br />
-                From humble beginnings to becoming a trusted supplier to brands like Indo Autotech, Badve Engineering, Surin Automotive, Rittal India, Swastid India Pvt Ltd, Havells, Mungo Fixings India Pvt Ltd, Modutec READY PANELS PVT LTD, Synergy Punchings our journey reflects commitment, consistency, and quality without compromise.
+                From humble beginnings to becoming a trusted supplier to brands like Indo Autotech, Badve Engineering, Surin Automotive, Rittal India, Swastid India Pvt Ltd, Havells, Mungo Fixings India Pvt Ltd, Modutec Ready Panels Pvt. Ltd., Synergy Punchings our journey reflects commitment, consistency, and quality without compromise.
               </p>
             </div>
           </div>
