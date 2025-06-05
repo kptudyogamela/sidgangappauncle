@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Ourstory() {
@@ -14,14 +15,6 @@ function Ourstory() {
               <div className="w-16 h-1 rounded-full bg-red-500 inline-flex"></div>
             </div>
           </div>
-          {/* Image Banner */}
-          {/* <div className="rounded-lg h-64 overflow-hidden">
-            <img
-              alt="Maruthi Auto Components"
-              className="object-cover object-center h-full w-full"
-              src="/Images/ourstory-cover.jpg" // Replace with your real image
-            />
-          </div> */}
 
           <div className="rounded-lg overflow-hidden">
             <video
@@ -39,13 +32,17 @@ function Ourstory() {
           <div className="flex flex-col sm:flex-row mt-10">
             {/* Founder Info */}
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto">
-                <img
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto relative">
+                <Image
+                  src="/Images/team/team1.jpg"
                   alt="Mr. Siddagangappa"
-                  src="/Images/team/team1.jpg" // ✅ Ensure this path is correct
-                  className="object-cover object-center w-full h-full"
+                  fill
+                  className="object-cover object-center"
+                  sizes="96px"
                 />
               </div>
+
+
               <div className="flex flex-col items-center text-center justify-center mt-4">
                 <h2 className="font-medium title-font text-gray-900 text-lg">
                   Mr. Siddagangappa
@@ -66,25 +63,8 @@ function Ourstory() {
 
                 We specialize in the manufacturing of precision auto-turned components and tubular parts including tie rods, slag rods, and foundation bolts. Our infrastructure includes Laser Cutting (3kW), CNC Bending (110T), Soco Cutting and Soco Chamferings, Special purpose Multi-head Drilling and Tapping Machines, Various Sizes of Traub Machines and Secondary Operation Machines, Thread Rolling Machines and High Accuracy Dia Reducing Machines, 220V Resistant Welding Machines.
                 <br /><br />
-                {/* MAC is ISO certified and driven by lean principles, Kaizen, 5S, and QMS. Our team has a deep understanding of automats, electrical, and mechanical components — offering both <strong>mass production</strong> and <strong>custom job work</strong> capabilities.
-                <br /><br /> */}
                 From humble beginnings to becoming a trusted supplier to brands like Indo Autotech, Badve Engineering, Surin Automotive, Rittal India, Swastid India Pvt Ltd, Havells, Mungo Fixings India Pvt Ltd, Modutec READY PANELS PVT LTD, Synergy Punchings our journey reflects commitment, consistency, and quality without compromise.
               </p>
-              {/* <a href="#" className="text-red-500 inline-flex items-center hover:underline">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a> */}
             </div>
           </div>
         </div>

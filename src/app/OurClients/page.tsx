@@ -60,8 +60,9 @@ const ClientsSection = () => {
             <div className="p-4 md:w-1/3 flex" key={index}>
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4 flex-shrink-0">
                 <img
-                  alt="Mr. Siddagangappa"
+                  alt={client.name}
                   src={client.icon}
+                  // className="w-10 h-10 rounded-full object-cover"
                   className="object-cover object-center w-full h-full"
                 />
               </div>

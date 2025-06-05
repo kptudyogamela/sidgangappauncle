@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const certificateData = [
   { title: "ISO 9001:2015 (Blank Template)", img: '/Images/certificate/certificate1.png' },
   { title: "Certificate of Appreciation - Rittal", img: '/Images/certificate/certificate2.png' },
@@ -27,11 +29,14 @@ export default function Certification() {
           {certificateData.map((cert, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-md p-4">
               <h3 className="text-xl font-semibold text-center mb-2">{cert.title}</h3>
-              <img
-                src={cert.img}
-                alt={cert.title}
-                className="rounded-lg w-full object-contain max-h-[100px]"
-              />
+              <div className="relative w-full h-[100px]">
+                <Image
+                  src={cert.img}
+                  alt={cert.title}
+                  fill
+                  className="rounded-lg object-contain"
+                />
+              </div>
             </div>
           ))}
         </div>

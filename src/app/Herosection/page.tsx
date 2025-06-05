@@ -301,13 +301,16 @@ export default function HeroSection() {
         </div>
 
         <div className="md:w-1/2 w-full flex flex-col items-center gap-4">
-          <img
-            src={galleryItems[carouselIndex].image}
+
+          <Image
+            src={`/${galleryItems[carouselIndex].image}`} // Ensure leading `/` or import directly
             alt={galleryItems[carouselIndex].subtitle}
             width={600}
             height={500}
             className="object-cover rounded-lg shadow-md"
+            priority
           />
+
         </div>
       </div>
 

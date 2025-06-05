@@ -65,13 +65,18 @@ export default function GalleryPage() {
           >
             <IoClose />
           </button>
-          <img
-            src={modalImage}
-            alt="Full View"
-            className="max-h-[90%] max-w-[90%] rounded-lg shadow-lg animate-zoomIn"
-          />
+          <div className="relative w-[90vw] h-[90vh] max-w-5xl max-h-[90%]">
+            <Image
+              src={modalImage}
+              alt="Full View"
+              fill
+              className="rounded-lg shadow-lg object-contain animate-zoomIn"
+              unoptimized // optional: only if images are hosted outside your domain or dynamic
+            />
+          </div>
         </div>
       )}
+
     </section>
   );
 }

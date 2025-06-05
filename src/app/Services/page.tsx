@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const services = [
@@ -125,7 +126,6 @@ const services = [
     count: 1,
   },
 ];
-
 const ServicesSection = () => {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
@@ -146,11 +146,16 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div className="p-4 md:w-1/3" key={index}>
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-gray-50">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={service.image}
-                  alt={service.title}
-                />
+                <div className="relative lg:h-48 md:h-36 w-full">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover object-center rounded-t-lg"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={index < 3} // optionally prioritize first 3 images
+                  />
+                </div>
                 <div className="p-4">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     {service.category}
@@ -159,33 +164,10 @@ const ServicesSection = () => {
                     {service.title}
                   </h1>
                   <p className="leading-relaxed mb-4 text-sm">{service.description}</p>
-                  {/* <p className="text-sm text-gray-500 mb-1">Quantity:  {service.count.toString().padStart(2, '0')}</p> */}
 
                   <div className="text-sm font-semibold text-gray-700">
                     Number of Machines : {service.count.toString().padStart(2, '0')}
                   </div>
-                  {/* {service.video && (
-                    <div className="flex items-center flex-wrap mt-4">
-                      <button
-                        className="text-red-700 hover:text-red-500 cursor-pointer inline-flex items-center md:mb-2 lg:mb-0"
-                      // onClick={() => setVideoSrc(service.video)}
-                      >
-                        Learn More
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  )} */}
                 </div>
               </div>
             </div>
