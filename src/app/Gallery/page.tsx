@@ -26,9 +26,9 @@ export default function GalleryPage() {
 
         <div className="flex flex-wrap -m-4">
           {galleryItems.map((item, idx) => (
-            <div key={idx} className="lg:w-1/3 sm:w-1/2 p-4">
+            <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 p-4">
               <div
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                className="group relative w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105"
                 onClick={() => setModalImage(item.image ?? null)}
               >
                 <Image
@@ -38,17 +38,18 @@ export default function GalleryPage() {
                   fill
                   loading="lazy"
                 />
-                <div className="px-8 py-10 relative z-10 w-full bg-white/90 backdrop-blur border-4 border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                <div className="px-4 py-6 sm:px-8 sm:py-10 relative z-10 w-full bg-white/90 backdrop-blur border-4 border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2 className="tracking-widest text-sm title-font font-medium text-red-600 mb-1">
                     {item.subtitle}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     {item.title}
                   </h1>
-                  <p className="leading-relaxed">{item.description}</p>
+                  <p className="leading-relaxed text-xs sm:text-sm">{item.description}</p>
                 </div>
               </div>
             </div>
+
 
           ))}
         </div>
