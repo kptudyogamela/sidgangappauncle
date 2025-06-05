@@ -5,9 +5,6 @@ interface Product {
   type: string;
   images: string[];
 }
-
-
-
 export const groupedProducts: Product[] = [
   {
     title: "Hexagonal Head Profiled Bolt",

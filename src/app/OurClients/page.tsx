@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const clients = [
   {
     icon: '/Images/trusted/logo1.jpeg',
@@ -58,31 +60,19 @@ const ClientsSection = () => {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {clients.map((client, index) => (
             <div className="p-4 md:w-1/3 flex" key={index}>
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4 flex-shrink-0">
-                <img
+              <div className="w-12 h-12 relative rounded-full bg-red-100 text-red-500 mb-4 flex-shrink-0 overflow-hidden">
+                <Image
                   alt={client.name}
                   src={client.icon}
-                  // className="w-10 h-10 rounded-full object-cover"
-                  className="object-cover object-center w-full h-full"
+                  fill className="object-cover object-center w-full h-full"
+                  style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  sizes="48px"
+                  priority={false}
                 />
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">{client.name}</h2>
                 <p className="leading-relaxed text-base">{client.description}</p>
-                {/* <a className="mt-3 text-red-500 inline-flex items-center cursor-pointer">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a> */}
               </div>
             </div>
           ))}
