@@ -28,16 +28,14 @@ export default function GalleryPage() {
           {galleryItems.map((item, idx) => (
             <div key={idx} className="lg:w-1/3 sm:w-1/2 p-4">
               <div
-                className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105"
                 onClick={() => setModalImage(item.image ?? null)}
-
               >
                 <Image
                   alt={item.title}
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                   src={item.image}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   loading="lazy"
                 />
                 <div className="px-8 py-10 relative z-10 w-full bg-white/90 backdrop-blur border-4 border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
@@ -51,6 +49,7 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
+
           ))}
         </div>
       </div>
