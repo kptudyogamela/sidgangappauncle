@@ -54,7 +54,7 @@ export default function ProductsClient() {
             className="relative w-full h-48 mb-4 select-none flex items-center justify-center rounded overflow-hidden"
             onContextMenu={(e) => e.preventDefault()}
           >
-            {!imageLoaded && (
+            {/* {!imageLoaded && (
               <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
                 <svg
                   className="animate-spin h-8 w-8 text-gray-400"
@@ -77,7 +77,7 @@ export default function ProductsClient() {
                   />
                 </svg>
               </div>
-            )}
+            )} */}
 
             {currentImage && (
               <Image
