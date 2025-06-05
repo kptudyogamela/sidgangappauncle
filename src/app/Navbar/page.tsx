@@ -63,11 +63,7 @@ export default function Navbar() {
               <Link href="/Gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
               <Link href="/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
               <Link href="/Career" onClick={() => setMenuOpen(false)}>Career</Link>
-              <Link href="/contact" onClick={() => setMenuOpen(false)}>
-                <button className="mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm w-full text-left">
-                  Get a Quote
-                </button>
-              </Link>
+
             </nav>
           </div>
         )}

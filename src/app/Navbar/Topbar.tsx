@@ -15,7 +15,7 @@ export default function TopBar() {
         {/* Scrolling Text */}
         <div className="w-full sm:flex-1 overflow-hidden whitespace-nowrap relative text-center">
           <div className="scroll-track font-semibold text-red-600 inline-block animate-marquee">
-            🚧 We are expanding to a new plot at Japanese Park, Vasanthanarsapuru Tumkur! 🚧&nbsp;&nbsp;&nbsp;
+            🚧 We are expanding to a new plot at Japanese Park, Vasanthanarsapura Tumkur! 🚧&nbsp;&nbsp;&nbsp;
           </div>
         </div>
 
