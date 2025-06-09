@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sidgangappauncle-a2rb.vercel.app/
+
+# Sitemaps
+Sitemap: https://sidgangappauncle-a2rb.vercel.app/sitemap.xml
