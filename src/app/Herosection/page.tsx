@@ -18,6 +18,138 @@ export default function HeroSection() {
 
   const galleryItems = [
     {
+      image: "Images/gal/N1.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N2.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N3.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N4.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N5.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N6.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N7.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N8.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N9.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N10.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N11.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N12.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N13.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N14.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N15.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N16.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N17.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N18.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N19.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N20.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N21.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N22.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N23.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N24.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N25.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N26.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N27.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N28.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N29.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N30.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N31.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N32.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N33.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N34.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N35.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N36.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N37.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N38.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N39.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N40.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N41.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N42.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N43.JPG.JPG",
+    },
+    {
+      image: "Images/gal/N44.JPG.JPG",
+    },
+    {
       title: "Precision Laser Cut",
       subtitle: "Laser Cutting",
       description: "Advanced laser cutting delivering clean, accurate finishes for various components.",
