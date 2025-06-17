@@ -17,13 +17,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Maruthi Auto Components",
   description: "maruthiautocomponents",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/logo.png", // ✅ Make sure logo file is lowercase
+  },
   openGraph: {
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
     url: "https://maruthiautocomponents.com",
     images: [
       {
-        url: "https://maruthiautocomponents.com/Logo.png", // ✅ Use a proper OG image
+        url: "https://maruthiautocomponents.com/logo.png", // ✅ Logo image
         width: 1200,
         height: 630,
         alt: "High-precision automotive components by Maruthi",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
-    images: ["https://maruthiautocomponents.com/1.JPG"], // ✅ Match OG image
+    images: ["https://maruthiautocomponents.com/logo.png"], // ✅ Use logo or brand OG image
   },
 };
 
@@ -46,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema.org Structured Data */}
+        {/* ✅ Structured Data (Schema.org) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -69,7 +73,7 @@ export default function RootLayout({
               "description": "Precision Engineering and Auto Components",
               "logo": "https://maruthiautocomponents.com/logo.png",
               "sameAs": [
-                "https://www.linkedin.com/company/maruthi-auto-components", // Optional: Add social profiles if available
+                "https://www.linkedin.com/company/maruthi-auto-components",
               ],
             }),
           }}
