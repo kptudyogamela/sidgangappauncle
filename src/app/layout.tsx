@@ -16,14 +16,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Maruthi Auto Components",
-  description: "Precision Engineering",
+  description: "maruthiautocomponents",
   openGraph: {
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
     url: "https://maruthiautocomponents.com",
     images: [
       {
-        url: "https://maruthiautocomponents.com/og-image.jpg", // ✅ Use a proper OG image
+        url: "https://maruthiautocomponents.com/Logo.png", // ✅ Use a proper OG image
         width: 1200,
         height: 630,
         alt: "High-precision automotive components by Maruthi",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
-    images: ["https://maruthiautocomponents.com/og-image.jpg"], // ✅ Match OG image
+    images: ["https://maruthiautocomponents.com/1.JPG"], // ✅ Match OG image
   },
 };
 
@@ -54,6 +54,17 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Maruthi Auto Components",
+              "alternateName": [
+                "maruthi components peenya",
+                "maruthi auto components peenya",
+                "Maruthi Auto Components Peenya",
+                "MaruthiAutoComponents",
+                "Maruthi Auto",
+                "Maruthi Auto Peenya",
+                "maruthi auto peenya",
+                "Maruthi Auto Parts",
+                "Maruthi Components Peenya"
+              ],
               "url": "https://maruthiautocomponents.com",
               "description": "Precision Engineering and Auto Components",
               "logo": "https://maruthiautocomponents.com/logo.png",
