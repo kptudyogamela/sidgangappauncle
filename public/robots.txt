@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://sidgangappauncle-a2rb.vercel.app/
+Host: https://maruthiautocomponents.com
 
 # Sitemaps
-Sitemap: https://sidgangappauncle-a2rb.vercel.app/sitemap.xml
+Sitemap: https://maruthiautocomponents.com/sitemap.xml

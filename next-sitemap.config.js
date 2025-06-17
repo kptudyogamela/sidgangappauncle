@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://sidgangappauncle-a2rb.vercel.app/",
+  siteUrl: "https://maruthiautocomponents.com",
   generateRobotsTxt: true,
 };

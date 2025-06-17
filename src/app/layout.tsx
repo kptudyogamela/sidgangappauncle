@@ -1,4 +1,3 @@
-// app/layout.tsx or app/layout.js
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -21,13 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
-    url: "https://sidgangappauncle-a2rb.vercel.app/",
+    url: "https://maruthiautocomponents.com",
     images: [
       {
-        url: "https://sidgangappauncle-a2rb.vercel.app//favicon.ico",
+        url: "https://maruthiautocomponents.com/og-image.jpg", // ✅ Use a proper OG image
         width: 1200,
         height: 630,
-        alt: "OG Image Alt",
+        alt: "High-precision automotive components by Maruthi",
       },
     ],
   },
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maruthi Auto Components",
     description: "Precision Engineering",
-    images: ["https://sidgangappauncle-a2rb.vercel.app//favicon.ico"],
+    images: ["https://maruthiautocomponents.com/og-image.jpg"], // ✅ Match OG image
   },
 };
 
@@ -46,6 +45,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Schema.org Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Maruthi Auto Components",
+              "url": "https://maruthiautocomponents.com",
+              "description": "Precision Engineering and Auto Components",
+              "logo": "https://maruthiautocomponents.com/logo.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/maruthi-auto-components", // Optional: Add social profiles if available
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
