@@ -607,7 +607,7 @@ export default function HeroSection() {
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
             <div className="relative w-98 max-w-xl bg-white rounded-xl p-6 shadow-lg">
               <Image
-                src="/Images/certificate/certificate4.png"
+                src="/Images/certificate/certificate4.jpg"
                 alt="ISO Certificate"
                 width={600}
                 height={800}

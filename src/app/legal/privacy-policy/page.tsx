@@ -1,111 +1,102 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6 text-red-500">Privacy Policy</h1>
+    <div className="bg-gradient-to-br from-pink-50 to-white min-h-screen py-20 px-4">
+      <div className="max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl px-6 sm:px-10 py-12 sm:py-16 text-gray-800 scroll-mt-24">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-red-600 mb-10 tracking-tight">
+          Privacy Policy
+        </h1>
 
-      <p className="mb-4">
-        This Privacy Policy outlines how Maruthi Auto Components (MAC) collects,
-        uses, and protects any information that you provide when using our
-        website or engaging with our services. We are committed to ensuring that
-        your privacy is protected and respected in accordance with applicable
-        data protection laws.
-      </p>
+        <p className="mb-6 text-base sm:text-lg text-gray-700 leading-relaxed">
+          This Privacy Policy outlines how Maruthi Auto Components (MAC) collects, uses, and protects
+          any information that you provide when using our website or engaging with our services. We are
+          committed to ensuring that your privacy is protected in accordance with applicable laws.
+        </p>
 
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        1. Information We Collect
-      </h2>
-      <p className="mb-4">
-        We may collect personal information such as your name, contact details,
-        email address, company name, and other relevant data when you fill out
-        contact forms, request information, or interact with our website.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        2. How We Use the Information
-      </h2>
-      <p className="mb-4">
-        The information we collect is used to understand your needs and provide
-        you with better service, and in particular for the following purposes:
-      </p>
-      <ul className="list-disc list-inside mb-4 text-gray-700">
-        <li>Responding to inquiries and requests</li>
-        <li>Providing quotations and business correspondence</li>
-        <li>Internal record keeping</li>
-        <li>Improving our products and services</li>
-        <li>Sending promotional emails (only if you have opted in)</li>
-      </ul>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        3. Data Security
-      </h2>
-      <p className="mb-4">
-        We are committed to ensuring that your information is secure. To prevent
-        unauthorized access or disclosure, we have put in place appropriate
-        physical, electronic, and managerial procedures to safeguard and secure
-        the information we collect online.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        4. Sharing of Information
-      </h2>
-      <p className="mb-4">
-        We do not sell, rent, or lease your personal information to third
-        parties. We may share your information with trusted partners solely for
-        the purpose of operating our business, such as logistics providers or
-        service providers involved in delivering our services, and only when
-        necessary.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        5. Cookies
-      </h2>
-      <p className="mb-4">
-        Our website may use cookies to enhance user experience. Cookies help us
-        analyze web traffic and improve our website. You can choose to accept or
-        decline cookies through your browser settings.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        6. Your Rights
-      </h2>
-      <p className="mb-4">
-        You have the right to request details of personal information we hold
-        about you. If you believe any information we are holding is incorrect or
-        incomplete, please contact us, and we will promptly correct it.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        7. Third-Party Links
-      </h2>
-      <p className="mb-4">
-        Our website may contain links to other websites. However, once you use
-        these links to leave our site, we do not have any control over those
-        other websites. Therefore, we cannot be responsible for the protection
-        and privacy of any information you provide while visiting such sites.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        8. Changes to this Policy
-      </h2>
-      <p className="mb-4">
-        Maruthi Auto Components reserves the right to change this Privacy Policy
-        at any time. Any changes will be posted on this page, and continued use
-        of the website indicates acceptance of those changes.
-      </p>
-
-      <h2 className="text-xl font-semibold text-gray-700 mt-8 mb-2">
-        9. Contact Us
-      </h2>
-      <p className="mb-4">
-        If you have any questions about this Privacy Policy or the way your
-        personal information is handled, please contact us at:{" "}
-        <a
-          href="mailto:maruthiautocomponents@gmail.com"
-          className="text-red-500 underline"
-        >
-          maruthiautocomponents@gmail.com
-        </a>
-      </p>
+        {[
+          {
+            title: '1. Information We Collect',
+            body: `We may collect personal information such as your name, contact details, email address, 
+            company name, and other relevant data when you fill out contact forms, request information, 
+            or interact with our website.`,
+          },
+          {
+            title: '2. How We Use the Information',
+            body: `The information we collect is used to understand your needs and provide better service, 
+            including:`,
+            list: [
+              'Responding to inquiries and requests',
+              'Providing quotations and business correspondence',
+              'Internal record keeping',
+              'Improving our products and services',
+              'Sending promotional emails (only if you have opted in)',
+            ],
+          },
+          {
+            title: '3. Data Security',
+            body: `We are committed to ensuring that your information is secure. To prevent unauthorized access 
+            or disclosure, we have appropriate physical, electronic, and managerial procedures in place.`,
+          },
+          {
+            title: '4. Sharing of Information',
+            body: `We do not sell, rent, or lease your personal information. Information may only be shared with 
+            trusted partners essential for service delivery, such as logistics or tech providers.`,
+          },
+          {
+            title: '5. Cookies',
+            body: `Our website may use cookies to enhance your experience. You can manage your cookie preferences 
+            through your browser settings.`,
+          },
+          {
+            title: '6. Your Rights',
+            body: `You have the right to request or correct personal information we hold about you. Please 
+            contact us for any updates or concerns.`,
+          },
+          {
+            title: '7. Third-Party Links',
+            body: `Our site may link to external websites. We are not responsible for their content or privacy 
+            practices. Use such links at your discretion.`,
+          },
+          {
+            title: '8. Changes to this Policy',
+            body: `MAC may update this policy from time to time. Please check this page regularly to ensure 
+            you agree with any changes.`,
+          },
+          {
+            title: '9. Contact Us',
+            body: `If you have any questions about this Privacy Policy or the handling of your information, 
+            please email us at: `,
+            link: {
+              label: 'maruthiautocomponents@gmail.com',
+              href: 'mailto:maruthiautocomponents@gmail.com',
+            },
+          },
+        ].map((section, index) => (
+          <div key={index} className="mb-8">
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3">{section.title}</h2>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              {section.body}
+              {section.link && (
+                <>
+                  {' '}
+                  <a
+                    href={section.link.href}
+                    className="text-red-500 underline break-words"
+                  >
+                    {section.link.label}
+                  </a>
+                </>
+              )}
+            </p>
+            {section.list && (
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700 text-base sm:text-lg">
+                {section.list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
