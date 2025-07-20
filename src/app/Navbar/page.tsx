@@ -10,12 +10,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname(); // ✅ Get current path
 
-  // Helper function to apply active class
-  const linkClass = (href) =>
-    pathname === href
-      ? 'text-red-600 font-semibold' // Active
-      : 'hover:text-gray-900';
 
+  const linkClass = (href: string) =>
+    pathname === href
+      ? 'text-red-600 font-semibold'
+      : 'hover:text-gray-900';
   return (
     <>
       {/* Top Strip */}
