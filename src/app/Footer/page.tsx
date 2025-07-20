@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -9,10 +12,28 @@ import {
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    if (!email || !email.includes("@")) {
+      toast.error("Please enter a valid email.");
+      return;
+    }
+
+    // Simulate success
+    console.log("Subscribed Email:", email);
+    toast.success("Thanks for subscribing!");
+    setEmail("");
+  };
+
   return (
     <footer className="text-gray-600 bg-gray-100 body-font">
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop closeOnClick pauseOnFocusLoss draggable pauseOnHover theme="light" />
+
       {/* Top Footer Section */}
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 flex flex-col md:flex-row md:justify-between md:items-start gap-8">
@@ -43,18 +64,16 @@ export default function Footer() {
                 </p>
                 <p className="flex justify-center md:justify-start items-center">
                   <FaEnvelope className="text-red-500 mr-2" />
-                  <a href="mailto:maruthiautocomponents@gmail.com" >  maruthiautocomponents@gmail.com</a>
+                  <a href="mailto:maruthiautocomponents@gmail.com">maruthiautocomponents@gmail.com</a>
                 </p>
                 <p className="flex justify-center md:justify-start items-center">
                   <FaPhoneAlt className="text-red-500 mr-2" />
-                  <a href="tel:9343777577">93437 77577
-                  </a> / <a href="tel:90082 34224">90082 34224 </a>
+                  <a href="tel:9343777577">93437 77577</a> / <a href="tel:9008234224">90082 34224</a>
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Column 2: Legal Links */}
           {/* Column 2: Legal Links */}
           <div className="w-full md:w-1/5 flex justify-center md:justify-start text-center md:text-left">
             <div>
@@ -62,45 +81,16 @@ export default function Footer() {
                 LEGAL
               </h2>
               <nav className="list-none space-y-2">
-                <li>
-                  <Link href="/legal/privacy-policy" className="text-gray-600 hover:text-red-500">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/terms-and-conditions" className="text-gray-600 hover:text-red-500">
-                    Terms & Conditions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/disclaimer" className="text-gray-600 hover:text-red-500">
-                    Disclaimer
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/return-refund-policy" className="text-gray-600 hover:text-red-500">
-                    Return & Refund Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/shipping-policy" className="text-gray-600 hover:text-red-500">
-                    Shipping Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/compliance-certifications" className="text-gray-600 hover:text-red-500">
-                    Compliance & Certifications
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/legal/quality-policy" className="text-gray-600 hover:text-red-500">
-                    Quality Policy & Objectives
-                  </Link>
-                </li>
+                <li><Link href="/legal/privacy-policy" className="text-gray-600 hover:text-red-500">Privacy Policy</Link></li>
+                <li><Link href="/legal/terms-and-conditions" className="text-gray-600 hover:text-red-500">Terms & Conditions</Link></li>
+                <li><Link href="/legal/disclaimer" className="text-gray-600 hover:text-red-500">Disclaimer</Link></li>
+                <li><Link href="/legal/return-refund-policy" className="text-gray-600 hover:text-red-500">Return & Refund Policy</Link></li>
+                <li><Link href="/legal/shipping-policy" className="text-gray-600 hover:text-red-500">Shipping Policy</Link></li>
+                <li><Link href="/legal/compliance-certifications" className="text-gray-600 hover:text-red-500">Compliance & Certifications</Link></li>
+                <li><Link href="/legal/quality-policy" className="text-gray-600 hover:text-red-500">Quality Policy & Objectives</Link></li>
               </nav>
             </div>
           </div>
-
 
           {/* Column 3: Products */}
           <div className="w-full md:w-1/5 flex justify-center md:justify-start text-center md:text-left">
@@ -119,7 +109,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Newsletter */}
+          {/* Column 4: Stay Connected */}
           <div className="w-full md:w-1/3 flex justify-center md:justify-start text-center md:text-left">
             <div>
               <h2 className="title-font font-medium text-red-400 tracking-widest text-sm mb-3">
@@ -132,9 +122,14 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full sm:w-auto flex-grow bg-gray-100 rounded border border-gray-300 focus:ring-2 focus:ring-red-200 focus:border-red-500 text-base outline-none text-gray-700 py-2 px-4"
                 />
-                <button className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">
+                <button
+                  onClick={handleSubscribe}
+                  className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
+                >
                   Subscribe
                 </button>
               </div>
