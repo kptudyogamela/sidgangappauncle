@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { groupedProducts } from './../Products/Prdoductsdata';
+import { groupedProducts } from './Prdoductsdata';
 
 const categories = ["All", ...new Set(groupedProducts.map((p) => p.category))];
 

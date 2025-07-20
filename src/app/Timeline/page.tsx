@@ -155,7 +155,7 @@ function Timeline() {
 
           <div className="lg:w-3/5 md:w-1/2 rounded-lg overflow-hidden md:mt-0 mt-12">
             <video
-              className="w-full h-200 object-cover rounded-lg"
+              className="w-full h-300 object-cover rounded-lg"
               src="/Images/videos/6.mp4"
               autoPlay
               muted

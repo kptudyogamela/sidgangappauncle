@@ -224,11 +224,17 @@ const CareersSection = () => {
             No 3, Raghavendra Industrial Estate, Phase 2, Peenya 2nd Stage, Bangalore – 560058
           </p>
           <a
-            href="mailto:hr@mac-india.in"
+            href="mailto:maruthiautocomponents@gmail.com?subject=Job Application&body=Dear HR,%0D%0A%0D%0AI am interested in applying for a job at Maruthi Auto Components..."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded text-lg"
           >
             Apply Now
           </a>
+
+
+
+
         </div>
       </div>
     </section>

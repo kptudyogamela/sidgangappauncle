@@ -2,11 +2,21 @@
 
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { galleryItems } from './galleryData';
 import Image from 'next/image';
 
 export default function GalleryPage() {
-  const [modalImage, setModalImage] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
+  const openModal = (index: number) => setCurrentIndex(index);
+  const closeModal = () => setCurrentIndex(null);
+  const showPrev = () =>
+    setCurrentIndex((prev) => (prev !== null ? (prev - 1 + galleryItems.length) % galleryItems.length : null));
+  const showNext = () =>
+    setCurrentIndex((prev) => (prev !== null ? (prev + 1) % galleryItems.length : null));
+
+  const modalImage = currentIndex !== null ? galleryItems[currentIndex]?.image : null;
 
   return (
     <section className="text-gray-600 body-font">
@@ -29,7 +39,7 @@ export default function GalleryPage() {
             <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 p-4">
               <div
                 className="group relative w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                onClick={() => setModalImage(item.image ?? null)}
+                onClick={() => openModal(idx)}
               >
                 <Image
                   alt={item.title}
@@ -49,8 +59,6 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
-
-
           ))}
         </div>
       </div>
@@ -59,24 +67,43 @@ export default function GalleryPage() {
       {modalImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center animate-fadeIn">
           <button
-            onClick={() => setModalImage(null)}
+            onClick={closeModal}
             className="absolute top-6 right-6 text-white text-4xl hover:text-red-400 transition"
             aria-label="Close"
           >
             <IoClose />
           </button>
+
+          {/* Prev Button */}
+          <button
+            onClick={showPrev}
+            className="absolute left-4 sm:left-10 text-white text-3xl hover:text-red-400 transition"
+            aria-label="Previous"
+          >
+            <FaChevronLeft />
+          </button>
+
+          {/* Image Display */}
           <div className="relative w-[90vw] h-[90vh] max-w-5xl max-h-[90%]">
             <Image
               src={modalImage}
               alt="Full View"
               fill
               className="rounded-lg shadow-lg object-contain animate-zoomIn"
-              unoptimized // optional: only if images are hosted outside your domain or dynamic
+              unoptimized
             />
           </div>
+
+          {/* Next Button */}
+          <button
+            onClick={showNext}
+            className="absolute right-4 sm:right-10 text-white text-3xl hover:text-red-400 transition"
+            aria-label="Next"
+          >
+            <FaChevronRight />
+          </button>
         </div>
       )}
-
     </section>
   );
 }

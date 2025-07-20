@@ -29,12 +29,22 @@ export default function Contact() {
                     </p>
                   </div>
                   <div className="md:w-1/2">
+
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mb-1">EMAIL</h2>
                     <a href="mailto:maruthiautocomponents@gmail.com" className="text-red-500 block mb-2">
                       maruthiautocomponents@gmail.com
                     </a>
+
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mb-1">PHONE</h2>
-                    <p>93437 77577 / 90082 34224</p>
+                    <span className="flex">
+                      <a href="tel:9343777577" className="text-red-400 block text-xs hover:text-red-600 hover:underline mb-1">
+                        93437 77577,
+                      </a>
+                      <a href="tel:9008234224" className="ml-2 text-red-400 hover:text-red-600 block text-xs hover:underline">
+                        90082 34224
+                      </a>
+                    </span>
+
                   </div>
                 </div>
               </div>
