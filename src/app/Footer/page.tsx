@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaEnvelope,
-  FaFacebookF,
+
   FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,

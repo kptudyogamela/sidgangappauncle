@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function TopBar() {
   return (
