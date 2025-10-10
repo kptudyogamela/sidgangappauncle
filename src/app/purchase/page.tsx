@@ -218,16 +218,18 @@ const PurchasePage = () => {
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
           Product Demo Video
         </h2>
-        <iframe
+
+        <video
           className="w-full md:w-[600px] h-52 md:h-[320px] mx-auto rounded-md shadow-sm"
           src="/Images/products/shoerack/1.mp4"
-
-          // src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          title="MAC Shoe Rack Demo"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+          controls
+          muted
+          autoPlay
+          loop
+          playsInline
+        />
       </div>
+
     </div>
   );
 };
