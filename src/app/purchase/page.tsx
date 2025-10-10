@@ -37,6 +37,7 @@ const PurchasePage = () => {
       "/Images/products/shoerack/6.png",
       "/Images/products/shoerack/12.png",
       "/Images/products/shoerack/4.png",
+      // "/Images/products/shoerack/1.mp4"
     ],
     description: [
       "Durable powder-coated steel body for long life",
@@ -109,7 +110,7 @@ const PurchasePage = () => {
         </div>
 
         {/* Product Details */}
-        <div className="flex-1">
+        <div className="flex-1 md:ml-17">
           <h1 className="text-xl font-semibold text-gray-800 leading-tight">
             {product.name}
           </h1>
@@ -187,7 +188,7 @@ const PurchasePage = () => {
           {/* Description */}
           <div className="mt-5">
             <p className="text-base font-medium mb-1">Key Features</p>
-            <ul className="list-disc ml-4 text-gray-600 text-xs space-y-0.5">
+            <ul className="list-disc ml-4 text-gray-600 text-s space-y-0.5">
               {product.description.map((desc, index) => (
                 <li key={index}>{desc}</li>
               ))}
@@ -219,7 +220,9 @@ const PurchasePage = () => {
         </h2>
         <iframe
           className="w-full md:w-[600px] h-52 md:h-[320px] mx-auto rounded-md shadow-sm"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          src="/Images/products/shoerack/1.mp4"
+
+          // src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
           title="MAC Shoe Rack Demo"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
