@@ -43,6 +43,7 @@ export default function Navbar() {
             <Link href="/" className={linkClass('/')}>Home</Link>
             <Link href="/about" className={linkClass('/about')}>About</Link>
             <Link href="/products" className={linkClass('/products')}>Products</Link>
+            <Link href="/purchase" className={linkClass('/purchase')}>Purchase</Link>
             <Link href="/services" className={linkClass('/services')}>Services</Link>
             <Link href="/businessplans" className={linkClass('/businessplans')}>Business Plans</Link>
             <Link href="/gallery" className={linkClass('/gallery')}>Gallery</Link>

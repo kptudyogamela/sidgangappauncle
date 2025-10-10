@@ -354,12 +354,6 @@ export default function HeroSection() {
       description: "Smooth sheet metal processing for housing and enclosures.",
       image: "Images/gal/12.jpg",
     },
-    // {
-    //   title: "Fasten Right",
-    //   subtitle: "Assembly Fasteners",
-    //   description: "Precision fasteners for high-stress mechanical joins.",
-    //   image: "Images/gal/13.JPG",
-    // },
     {
       title: "Even Finish",
       subtitle: "Surface Polishing",
@@ -463,12 +457,6 @@ export default function HeroSection() {
       description: "Press machines shaping and flattening metal sheets efficiently.",
       image: "Images/gal/35.jpg",
     },
-    // {
-    //   title: "Inventory Precision",
-    //   subtitle: "Parts Management",
-    //   description: "Barcode-based inventory system streamlining the workflow.",
-    //   image: "Images/gal/36.jpg",
-    // },
     {
       title: "Clean and Coated",
       subtitle: "Surface Treatment",
@@ -609,10 +597,11 @@ export default function HeroSection() {
               <Image
                 src="/Images/certificate/certificate4.jpg"
                 alt="ISO Certificate"
-                width={600}
-                height={800}
-                className="object-contain w-full h-auto rounded-lg"
+                width={1000}
+                height={1400}
+                className="rounded-lg w-full h-auto object-contain"
               />
+
               <button
                 onClick={() => setShowCertificate(false)}
                 className="absolute top-2 right-2 text-black text-xl bg-white hover:bg-red-600 hover:text-white transition rounded-full w-10 h-10 flex items-center justify-center"

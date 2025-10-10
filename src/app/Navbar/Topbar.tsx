@@ -10,8 +10,8 @@ export default function TopBar() {
           <span>📞 <a href="tel:9343777577">93437 77577
           </a> / <a href="tel:90082 34224">90082 34224 </a></span>
           <span className="hidden sm:inline">|</span>
-          <span>✉️  <a href="mailto:maruthiautocomponents@gmail.com" >
-            maruthiautocomponents@gmail.com
+          <span>✉️  <a href="mailto:mac@maruthiauto.com" >
+            mac@maruthiauto.com
           </a></span>
         </div>
 
@@ -24,9 +24,17 @@ export default function TopBar() {
 
         {/* Social Icons (right) */}
         <div className="hidden sm:flex items-center gap-3">
-          <a className="text-gray-500 hover:text-red-500" href="#"><FaFacebookF className="w-5 h-4" /></a>
+          {/* <a className="text-gray-500 hover:text-red-500" href="#"><FaFacebookF className="w-5 h-4" /></a> */}
           <a className="text-gray-500 hover:text-red-500" href="#"><FaTwitter className="w-5 h-4" /></a>
-          <a className="text-gray-500 hover:text-red-500" href="#"><FaInstagram className="w-5 h-4" /></a>
+          <a
+            className="text-gray-500 hover:text-red-500"
+            href="https://www.instagram.com/macc.omporg?utm_source=qr&igsh=MWl4Mm8weDMxeWRjcg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="w-5 h-4" />
+          </a>
+
           <a className="text-gray-500 hover:text-red-500" href="#"><FaLinkedinIn className="w-5 h-4" /></a>
         </div>
 

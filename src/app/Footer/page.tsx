@@ -64,7 +64,7 @@ export default function Footer() {
                 </p>
                 <p className="flex justify-center md:justify-start items-center">
                   <FaEnvelope className="text-red-500 mr-2" />
-                  <a href="mailto:maruthiautocomponents@gmail.com">maruthiautocomponents@gmail.com</a>
+                  <a href="mailto:maruthiautocomponents@gmail.com">mac@maruthiauto.com</a>
                 </p>
                 <p className="flex justify-center md:justify-start items-center">
                   <FaPhoneAlt className="text-red-500 mr-2" />
@@ -148,9 +148,16 @@ export default function Footer() {
           </p>
           <p className="text-gray-500 text-sm">Maintained by Swasyaha Solutions</p>
           <div className="flex justify-center gap-4">
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Facebook"><FaFacebookF className="w-5 h-4" /></a>
+            {/* <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Facebook"><FaFacebookF className="w-5 h-4" /></a> */}
             <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Twitter"><FaTwitter className="w-5 h-4" /></a>
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Instagram"><FaInstagram className="w-5 h-4" /></a>
+            <a
+              className="text-gray-500 hover:text-red-500"
+              href="https://www.instagram.com/macc.omporg?utm_source=qr&igsh=MWl4Mm8weDMxeWRjcg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="w-5 h-4" />
+            </a>
             <a className="text-gray-500 hover:text-red-500" href="#" aria-label="LinkedIn"><FaLinkedinIn className="w-5 h-4" /></a>
           </div>
         </div>
