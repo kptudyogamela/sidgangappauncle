@@ -3,19 +3,19 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
+type StepSize = "2-Step" | "3-Step" | "4-Step" | "5-Step";
+
 const PurchasePage = () => {
   const router = useRouter();
 
-  // Step-based pricing
-  const priceList = {
+  const priceList: Record<StepSize, number> = {
     "2-Step": 3200,
     "3-Step": 3700,
     "4-Step": 4700,
     "5-Step": 5700,
   };
 
-  // Pair info mapping
-  const pairInfo = {
+  const pairInfo: Record<StepSize, string> = {
     "2-Step": "Holds 6 pairs",
     "3-Step": "Holds 9 pairs",
     "4-Step": "Holds 12 pairs",
@@ -27,7 +27,7 @@ const PurchasePage = () => {
     category: "Home Utility",
     rating: 4.8,
     colors: ["Gray", "Ivory", "Coffee-Brown", "Ivory-Gray"],
-    sizes: Object.keys(priceList),
+    sizes: Object.keys(priceList) as StepSize[],
     images: [
       "/Images/products/shoerack/8.png",
       "/Images/products/shoerack/7.png",
@@ -51,9 +51,9 @@ const PurchasePage = () => {
 
   const [thumbnail, setThumbnail] = useState(product.images[0]);
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const [selectedSize, setSelectedSize] = useState<StepSize>(product.sizes[0]);
 
-  const finalPrice = priceList[selectedSize];
+  const finalPrice = priceList[selectedSize]; // ✅ Type-safe now!
 
   const handleBuyNow = () => {
     router.push(
@@ -68,7 +68,6 @@ const PurchasePage = () => {
   const handleCall = () => {
     window.location.href = "tel:+9190082343224";
   };
-
   return (
     <div className="max-w-6xl mx-auto w-full px-4 py-6 text-[14px] leading-snug">
       {/* Breadcrumb */}
