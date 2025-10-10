@@ -46,7 +46,7 @@ const PurchasePage = () => {
       "Compact and space-saving design ideal for apartments",
       "Wall-mountable or free-standing installation options",
       "Waterproof and moisture-resistant finish",
-      "Includes transportation and installation within Bengaluru",
+      "Transportation and installation is extra charged",
     ],
   };
 
@@ -140,7 +140,7 @@ const PurchasePage = () => {
           <div className="mt-3">
             <p className="text-2xl font-semibold text-red-600">₹{finalPrice}</p>
             <p className="text-gray-500 text-xs">
-              (Includes transportation and installation within Bengaluru)
+              (Transportation and installation Charges are not included)
             </p>
           </div>
 

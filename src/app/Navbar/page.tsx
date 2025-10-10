@@ -59,6 +59,7 @@ export default function Navbar() {
               <Link href="/" onClick={() => setMenuOpen(false)} className={linkClass('/')}>Home</Link>
               <Link href="/about" onClick={() => setMenuOpen(false)} className={linkClass('/about')}>About</Link>
               <Link href="/products" onClick={() => setMenuOpen(false)} className={linkClass('/products')}>Products</Link>
+              <Link href="/purchase" onClick={() => setMenuOpen(false)} className={linkClass('/purchase')}>Purchase</Link>
               <Link href="/services" onClick={() => setMenuOpen(false)} className={linkClass('/services')}>Services</Link>
               <Link href="/businessplans" onClick={() => setMenuOpen(false)} className={linkClass('/businessplans')}>Business Plans</Link>
               <Link href="/gallery" onClick={() => setMenuOpen(false)} className={linkClass('/gallery')}>Gallery</Link>
