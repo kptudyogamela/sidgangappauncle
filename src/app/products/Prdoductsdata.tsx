@@ -11,7 +11,7 @@ export const groupedProducts: Product[] = [
     description: "High-quality steel shoe rack manufactured in various sizes, colors, and finishes. Designed for strength, corrosion resistance, and aesthetic appeal — ideal for homes, offices, or display spaces. Easy to assemble and customize with modular units.",
     category: "Shoe Rack",
     type: "Shoe Rack",
-    images: [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13].map(i => `/Images/products/shoerack/${i}.png`)
+    images: [...[14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map(i => `/Images/products/shoerack/${i}.jpg`), ...[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 25].map(i => `/Images/products/shoerack/${i}.png`),]
   },
   {
     title: "Hexagonal Head Profiled Bolt",

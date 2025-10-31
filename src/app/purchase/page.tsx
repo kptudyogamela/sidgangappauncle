@@ -29,6 +29,12 @@ const PurchasePage = () => {
     colors: ["Gray", "Ivory", "Coffee-Brown", "Ivory-Gray"],
     sizes: Object.keys(priceList) as StepSize[],
     images: [
+      "/Images/products/shoerack/14.jpg",
+      "/Images/products/shoerack/16.jpg",
+      "/Images/products/shoerack/17.jpg",
+      "/Images/products/shoerack/20.jpg",
+      "/Images/products/shoerack/22.jpg",
+      "/Images/products/shoerack/24.jpg",
       "/Images/products/shoerack/8.png",
       "/Images/products/shoerack/7.png",
       "/Images/products/shoerack/10.png",
