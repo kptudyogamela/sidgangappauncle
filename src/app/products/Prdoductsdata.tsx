@@ -7,6 +7,16 @@ interface Product {
 }
 export const groupedProducts: Product[] = [
   {
+    title: "Mobile Stand",
+    description: "Premium quality adjustable mobile stand manufactured using durable metal with anti-slip base. Available in multiple modern colors and finishes. Ideal for office desks, study tables, kitchens, and video calls. ",
+    category: "Mobile Accessories",
+    type: "Mobile Stand",
+    images: [
+      ...[1, 3, 4, 5, 6].map(i => `/Images/products/mobilestand/${i}.png`),
+    ],
+  },
+
+  {
     title: "Shoe Rack",
     description: "High-quality steel shoe rack manufactured in various sizes, colors, and finishes. Designed for strength, corrosion resistance, and aesthetic appeal — ideal for homes, offices, or display spaces. Easy to assemble and customize with modular units.",
     category: "Shoe Rack",

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
-import Link from "next/link"; // ✅ import Link
+import Link from "next/link";
 
 export default function ShoeRackBar() {
   const [gradientPos, setGradientPos] = useState(0);
@@ -37,7 +37,7 @@ export default function ShoeRackBar() {
 
   return (
     <div
-      className={`sticky top-[50px] z-40 w-full text-white shadow-md transition-all duration-500 ease-in-out ${
+      className={`sticky top-[52px] z-40 w-full text-white shadow-md transition-all duration-500 ease-in-out ${
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       }`}
       style={{
@@ -50,28 +50,30 @@ export default function ShoeRackBar() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 text-center flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-        <span className="flex items-center gap-2 text-lg sm:text-xl font-semibold drop-shadow-md">
-          <Sparkles className="w-5 h-5 text-yellow-500 animate-pulse" /> Now
-          Manufacturing Premium Shoe Racks!
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-2 flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-2 sm:gap-4">
+        {/* ✅ Main Text */}
+        <span className="flex items-center justify-center gap-2 text-sm sm:text-lg font-semibold drop-shadow-md leading-tight">
+          <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 animate-pulse" />
+          We Manufacture Shoe Racks & Mobile Stand!
         </span>
 
-        <span className="hidden sm:inline text-base drop-shadow-sm">
+        {/* ✅ Hidden on very small screens, visible after sm */}
+        <span className="hidden sm:inline text-sm sm:text-base drop-shadow-sm">
           Available in multiple <strong>sizes</strong> & <strong>colors</strong>{" "}
-          — durable, elegant, and space-saving.
+          — durable, elegant & space-saving.
         </span>
 
-        {/* ✅ Replaced <a> with Next.js <Link> */}
+        {/* ✅ Mobile-friendly CTA */}
         <Link
           href="/purchase"
-          className="relative bg-white text-red-600 font-semibold px-4 py-1 rounded-full shadow hover:bg-gray-100 transition text-sm sm:text-base"
+          className="relative mt-1 sm:mt-0 bg-white text-red-600 font-semibold px-4 sm:px-5 py-1.5 sm:py-2 rounded-full shadow hover:bg-gray-100 transition text-xs sm:text-base"
         >
           Explore
           <span className="absolute inset-0 rounded-full bg-red-500/30 blur-md opacity-0 animate-pulse-glow pointer-events-none"></span>
         </Link>
       </div>
 
-      {/* Glow animation */}
+      {/* ✅ Glow animation */}
       <style jsx>{`
         @keyframes pulse-glow {
           0%,
