@@ -7,9 +7,9 @@ const PurchasePage = () => {
   const router = useRouter();
 
   const priceList = {
-    Mini: 399,
-    Standard: 699,
-    Premium: 999,
+    Mini: 100,
+    Standard: 125,
+    Premium: 150,
   };
 
   const standInfo = {
