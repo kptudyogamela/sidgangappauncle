@@ -12,7 +12,7 @@ export default function Navbar() {
   const [mobilePurchaseOpen, setMobilePurchaseOpen] = useState(false); // ✅ Mobile dropdown
   const pathname = usePathname();
 
-  const linkClass = (href) =>
+  const linkClass = (href: string) =>
     pathname === href
       ? 'text-red-600 font-semibold'
       : 'hover:text-gray-900';
