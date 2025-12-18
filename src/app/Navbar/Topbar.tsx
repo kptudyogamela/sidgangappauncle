@@ -11,7 +11,7 @@ export default function TopBar() {
           </a> / <a href="tel:90082 34224">90082 34224 </a></span>
           <span className="hidden sm:inline">|</span>
           <span>✉️  <a href="mailto:mac@maruthiautocomponents.com" >
-            mac@maruthiauto.com
+            office@maruthiautocomponents.com || mac@maruthiautocomponents.com
           </a></span>
         </div>
 
