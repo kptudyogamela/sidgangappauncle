@@ -64,7 +64,7 @@ export default function Footer() {
                 </p>
                 <p className="flex justify-center md:justify-start items-center">
                   <FaEnvelope className="text-red-500 mr-2" />
-                  <a href="mailto:mac@maruthiautocomponents.com">
+                  <a href="mailto:office@maruthiautocomponents.com">
                     office@maruthiautocomponents.com  mac@maruthiautocomponents.com</a>
                 </p>
                 <p className="flex justify-center md:justify-start items-center">

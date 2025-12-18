@@ -31,8 +31,9 @@ export default function Contact() {
                   <div className="md:w-1/2">
 
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mb-1">EMAIL</h2>
-                    <a href="mailto:maruthiautocomponents@gmail.com" className="text-red-500 block mb-2">
-                      maruthiautocomponents@gmail.com
+                    <a href="mailto:office@maruthiautocomponents.com" className="text-red-500 block mb-2">
+                      office@maruthiautocomponents.com  mac@maruthiautocomponents.com
+
                     </a>
 
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mb-1">PHONE</h2>
