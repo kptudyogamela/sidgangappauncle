@@ -16,11 +16,43 @@ const PurchasePage = () => {
   };
 
   const pairInfo: Record<StepSize, string> = {
-    "2-Step": "Holds 6 pairs",
-    "3-Step": "Holds 9 pairs",
-    "4-Step": "Holds 12 pairs",
-    "5-Step": "Holds 15 pairs",
+    "2-Step": `
+Holds 6 pairs
+Dimensions:
+• 27.5" × 27" × 5.5"
+• 27.5" × 19" × 5.5"
+Features:
+• Double Lock system
+`,
+
+    "3-Step": `
+Holds 9 pairs
+Dimensions:
+• 40.5" × 27" × 5.5"
+• 40.5" × 19" × 5.5"
+Features:
+• Double Lock system
+`,
+
+    "4-Step": `
+Holds 12 pairs
+Dimensions:
+• 53.5" × 27" × 5.5"
+• 53.5" × 19" × 5.5"
+Features:
+• Double Lock system
+`,
+
+    "5-Step": `
+Holds 15 pairs
+Dimensions:
+• 66.5" × 27" × 5.5"
+• 66.5" × 19" × 5.5"
+Features:
+• Double Lock system
+`,
   };
+
 
   const product = {
     name: "MAC Powder-Coated Metal Shoe Rack",

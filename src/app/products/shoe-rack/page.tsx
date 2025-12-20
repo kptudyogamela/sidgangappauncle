@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-type StepSize = "2-Step" | "3-Step" | "4-Step" | "5-Step";
+type StepSize = "2-Step" | "3-Step" | "4-Step" | "5-Step" | "4-Step-Double-Lock" | "5-Step-Double-Lock";
 
 const PurchasePage = () => {
   const router = useRouter();
@@ -13,14 +13,62 @@ const PurchasePage = () => {
     "3-Step": 3700,
     "4-Step": 4700,
     "5-Step": 5700,
+    "4-Step-Double-Lock": 5000,
+    "5-Step-Double-Lock": 6000,
   };
 
-  const pairInfo: Record<StepSize, string> = {
-    "2-Step": "Holds 6 pairs",
-    "3-Step": "Holds 9 pairs",
-    "4-Step": "Holds 12 pairs",
-    "5-Step": "Holds 15 pairs",
+  const pairInfo: Record<
+    StepSize,
+    {
+      pairs: number;
+      dimensions: string[];
+    }
+  > = {
+    "2-Step": {
+      pairs: 6,
+      dimensions: [
+        `27.5" × 27" × 5.5"`,
+        `27.5" × 19" × 5.5"`,
+      ],
+    },
+
+    "3-Step": {
+      pairs: 9,
+      dimensions: [
+        `40.5" × 27" × 5.5"`,
+        `40.5" × 19" × 5.5"`,
+      ],
+    },
+
+    "4-Step": {
+      pairs: 12,
+      dimensions: [
+        `53.5" × 27" × 5.5"`,
+        `53.5" × 19" × 5.5"`,
+      ],
+    },
+
+    "4-Step-Double-Lock": {
+      pairs: 12,
+      dimensions: [`56" × 27" × 5.5"`],
+    },
+
+    "5-Step": {
+      pairs: 15,
+      dimensions: [
+        `66.5" × 27" × 5.5"`,
+        `66.5" × 19" × 5.5"`,
+      ],
+    },
+
+    "5-Step-Double-Lock": {
+      pairs: 15,
+      dimensions: [`68" × 27" × 5.5"`],
+    },
   };
+
+
+
 
   const product = {
     name: "MAC Powder-Coated Metal Shoe Rack",
@@ -29,15 +77,21 @@ const PurchasePage = () => {
     colors: ["Gray", "Ivory", "Coffee-Brown", "Ivory-Gray"],
     sizes: Object.keys(priceList) as StepSize[],
     images: [
+      "/Images/products/shoerack/91.jpeg",
+      "/Images/products/shoerack/92.jpeg",
+      "/Images/products/shoerack/93.jpeg",
+      "/Images/products/shoerack/94.jpeg",
+      "/Images/products/shoerack/95.jpeg",
+      "/Images/products/shoerack/96.jpeg",
       "/Images/products/shoerack/14.jpg",
       "/Images/products/shoerack/16.jpg",
       "/Images/products/shoerack/17.jpg",
-      "/Images/products/shoerack/20.jpg",
-      "/Images/products/shoerack/22.jpg",
-      "/Images/products/shoerack/24.jpg",
-      "/Images/products/shoerack/8.png",
-      "/Images/products/shoerack/7.png",
-      "/Images/products/shoerack/10.png",
+      // "/Images/products/shoerack/20.jpg",
+      // "/Images/products/shoerack/22.jpg",
+      // "/Images/products/shoerack/24.jpg",
+      // "/Images/products/shoerack/8.png",
+      // "/Images/products/shoerack/7.png",
+      // "/Images/products/shoerack/10.png",
       "/Images/products/shoerack/3.png",
       "/Images/products/shoerack/9.png",
       "/Images/products/shoerack/6.png",
@@ -186,9 +240,30 @@ const PurchasePage = () => {
                 </button>
               ))}
             </div>
-            <p className="mt-2 text-gray-700 text-sm font-medium">
-              {pairInfo[selectedSize]}
-            </p>
+            <div className="mt-3 rounded-md border border-gray-200 bg-gray-50 p-3 text-sm">
+              {/* Pairs */}
+              <p className="text-gray-800 font-medium">
+                Holds{" "}
+                <span className="text-red-600 font-semibold">
+                  {pairInfo[selectedSize].pairs}
+                </span>{" "}
+                pairs of shoes
+              </p>
+
+              {/* Dimensions */}
+              <p className="mt-2 text-gray-700 font-medium">Dimensions:</p>
+              <ul className="mt-1 space-y-0.5">
+                {pairInfo[selectedSize].dimensions.map((dim, index) => (
+                  <li
+                    key={index}
+                    className="text-blue-700 font-medium"
+                  >
+                    • {dim}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
 
           {/* Description */}
