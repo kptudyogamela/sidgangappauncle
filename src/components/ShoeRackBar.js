@@ -40,7 +40,7 @@ export default function ShoeRackBar() {
 
   return (
     <div
-      className={`sticky top-[52px] z-40 w-full transition-all duration-500 ${
+      className={` z-40 w-full transition-all duration-500 ${
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       }`}
       style={{
