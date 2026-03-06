@@ -143,14 +143,23 @@ export default function Footer() {
 
       {/* Bottom Footer */}
       <div className="border-t bg-gray-200 border-gray-300 mt-1 shadow-inner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <p className="text-gray-500 text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+
+          <p className="text-gray-600 text-xs sm:text-sm">
             © {new Date().getFullYear()} Maruthi Auto Components. All rights reserved.
           </p>
-          <p className="text-gray-500 text-sm">Maintained by Swasyaha Solutions</p>
+
+          <Link href="https://swasyaha.in" target="_blank">
+            <span className="text-gray-600 text-xs sm:text-sm hover:text-red-600 hover:underline cursor-pointer transition-all duration-300">
+              Developed & Maintained by Swasyaha Solutions
+            </span>
+          </Link>
+
           <div className="flex justify-center gap-4">
-            {/* <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Facebook"><FaFacebookF className="w-5 h-4" /></a> */}
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Twitter"><FaTwitter className="w-5 h-4" /></a>
+            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="Twitter">
+              <FaTwitter className="w-5 h-4" />
+            </a>
+
             <a
               className="text-gray-500 hover:text-red-500"
               href="https://www.instagram.com/macc.omporg?utm_source=qr&igsh=MWl4Mm8weDMxeWRjcg=="
@@ -159,10 +168,14 @@ export default function Footer() {
             >
               <FaInstagram className="w-5 h-4" />
             </a>
-            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="LinkedIn"><FaLinkedinIn className="w-5 h-4" /></a>
+
+            <a className="text-gray-500 hover:text-red-500" href="#" aria-label="LinkedIn">
+              <FaLinkedinIn className="w-5 h-4" />
+            </a>
           </div>
+
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
