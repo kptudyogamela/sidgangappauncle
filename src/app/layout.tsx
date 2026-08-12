@@ -16,30 +16,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Maruthi Auto Components",
-  description: "maruthiautocomponents",
+  title: "Maruthi Auto Component",
+  description: "maruthiautocomponent",
   icons: {
     icon: "/favicon.ico",
     apple: "/logo.png", // ✅ Make sure logo file is lowercase
   },
   openGraph: {
-    title: "Maruthi Auto Components",
+    title: "Maruthi Auto Component",
     description: "Precision Engineering",
-    url: "https://maruthiautocomponents.com",
+    url: "https://maruthiautocomponent.com",
     images: [
       {
-        url: "https://maruthiautocomponents.com/logo.png", // ✅ Logo image
+        url: "https://maruthiautocomponent.com/logo.png", // ✅ Logo image
         width: 1200,
         height: 630,
-        alt: "High-precision automotive components by Maruthi",
+        alt: "High-precision automotive component by Maruthi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maruthi Auto Components",
+    title: "Maruthi Auto Component",
     description: "Precision Engineering",
-    images: ["https://maruthiautocomponents.com/logo.png"], // ✅ Use logo or brand OG image
+    images: ["https://maruthiautocomponent.com/logo.png"], // ✅ Use logo or brand OG image
   },
 };
 
@@ -58,23 +58,23 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Maruthi Auto Components",
+              "name": "Maruthi Auto Component",
               "alternateName": [
-                "maruthi components peenya",
-                "maruthi auto components peenya",
-                "Maruthi Auto Components Peenya",
-                "MaruthiAutoComponents",
+                "maruthi component peenya",
+                "maruthi auto component peenya",
+                "Maruthi Auto Component Peenya",
+                "MaruthiAutoComponent",
                 "Maruthi Auto",
                 "Maruthi Auto Peenya",
                 "maruthi auto peenya",
                 "Maruthi Auto Parts",
-                "Maruthi Components Peenya"
+                "Maruthi Component Peenya"
               ],
-              "url": "https://maruthiautocomponents.com",
-              "description": "Precision Engineering and Auto Components",
-              "logo": "https://maruthiautocomponents.com/logo.png",
+              "url": "https://maruthiautocomponent.com",
+              "description": "Precision Engineering and Auto Component",
+              "logo": "https://maruthiautocomponent.com/logo.png",
               "sameAs": [
-                "https://www.linkedin.com/company/maruthi-auto-components",
+                "https://www.linkedin.com/company/maruthi-auto-component",
               ],
             }),
           }}
