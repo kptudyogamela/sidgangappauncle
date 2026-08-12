@@ -217,14 +217,14 @@ const CareersSection = () => {
           </div>
           <p className="text-gray-600 mb-4">
             Send your updated resume to{' '}
-            <a href="mailto:office@maruthiautocomponents.com" className="text-red-500 underline">
-              office@maruthiautocomponents.com
+            <a href="mailto:maruthiautocomponents@gmail.com" className="text-red-500 underline">
+              maruthiautocomponents@gmail.com
             </a>{' '}
             or visit our facility:<br />
             No 3, Raghavendra Industrial Estate, Phase 2, Peenya 2nd Stage, Bangalore – 560058
           </p>
           <a
-            href="mailto:office@maruthiautocomponents.com?subject=Job Application&body=Dear HR,%0D%0A%0D%0AI am interested in applying for a job at Maruthi Auto Components..."
+            href="mailto:maruthiautocomponents@gmail.com?subject=Job Application&body=Dear HR,%0D%0A%0D%0AI am interested in applying for a job at Maruthi Auto Components..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded text-lg"
