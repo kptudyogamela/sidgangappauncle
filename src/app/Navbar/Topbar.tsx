@@ -10,8 +10,8 @@ export default function TopBar() {
           <span>📞 <a href="tel:9343777577">93437 77577
           </a> / <a href="tel:90082 34224">90082 34224 </a></span>
           <span className="hidden sm:inline">|</span>
-          <span>✉️  <a href="mailto:office@maruthiautocomponents.com" >
-            office@maruthiautocomponents.com || mac@maruthiautocomponents.com
+          <span>✉️  <a href="maruthiautocomponents@gmail.com" >
+            maruthiautocomponents@gmail.com
           </a></span>
         </div>
 

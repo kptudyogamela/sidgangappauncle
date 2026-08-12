@@ -32,7 +32,7 @@ export default function Contact() {
 
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mb-1">EMAIL</h2>
                     <a href="mailto:office@maruthiautocomponents.com" className="text-red-500 block mb-2">
-                      office@maruthiautocomponents.com  mac@maruthiautocomponents.com
+                     maruthiautocomponents@gmail.com
 
                     </a>
 
