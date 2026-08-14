@@ -16,30 +16,61 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Maruthi Auto Component",
-  description: "maruthiautocomponent",
+  metadataBase: new URL("https://www.maruthiautocomponent.com"),
+
+  title: {
+    default: "Maruthi Auto Components | Precision Automotive Components",
+    template: "%s | Maruthi Auto Components",
+  },
+
+  description:
+    "Maruthi Auto Components is a manufacturer of precision automotive components, tubular and turned parts, bolts, laser-cut and CNC-bent components in Peenya, Bangalore.",
+
+  alternates: {
+    canonical: "/",
+  },
+
   icons: {
     icon: "/favicon.ico",
-    apple: "/logo.png", // ✅ Make sure logo file is lowercase
+    apple: "/logo.png",
   },
+
   openGraph: {
-    title: "Maruthi Auto Component",
-    description: "Precision Engineering",
-    url: "https://maruthiautocomponent.com",
+    title: "Maruthi Auto Components | Precision Automotive Components",
+    description:
+      "Manufacturer of precision automotive components, tubular and turned parts, bolts, laser-cut and CNC-bent components.",
+    url: "https://www.maruthiautocomponent.com/",
+    siteName: "Maruthi Auto Components",
+    type: "website",
+    locale: "en_IN",
     images: [
       {
-        url: "https://maruthiautocomponent.com/logo.png", // ✅ Logo image
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "High-precision automotive component by Maruthi",
+        alt: "Maruthi Auto Components",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Maruthi Auto Component",
-    description: "Precision Engineering",
-    images: ["https://maruthiautocomponent.com/logo.png"], // ✅ Use logo or brand OG image
+    title: "Maruthi Auto Components",
+    description:
+      "Precision automotive components and engineering solutions.",
+    images: ["/logo.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

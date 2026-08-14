@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://maruthiautocomponents.com",
+  siteUrl: "https://maruthiautocomponent.com",
   generateRobotsTxt: true,
 };
