@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://www.maruthiautocomponent.com/sitemap.xml
+# Host
+Host: https://maruthiautocomponent.com
+
+# Sitemaps
+Sitemap: https://maruthiautocomponent.com/sitemap.xml
