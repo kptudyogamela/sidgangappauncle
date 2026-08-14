@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://maruthiautocomponents.com
+Host: https://maruthiautocomponent.com
 
 # Sitemaps
-Sitemap: https://maruthiautocomponents.com/sitemap.xml
+Sitemap: https://maruthiautocomponent.com/sitemap.xml
